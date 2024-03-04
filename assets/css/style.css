@@ -739,6 +739,8 @@ div.page-wrapper {
 }
 
 
-@media only screen and (max-width: 414px) { /* iPhone 12 Pro Max width */
-  
+@media only screen and (max-width: 414px) {
+  body {
+    background-color: black; /* Set background color to black */
+  }
 }
