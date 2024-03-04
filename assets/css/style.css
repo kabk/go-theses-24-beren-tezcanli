@@ -391,7 +391,7 @@ p{
   text-align: center;
   text-indent: clamp(0.625rem, 1vw, 1.25rem);
   font-size: clamp(1.25rem, 3vw, 1.875rem);
-  line-height: clamp(1.6rem, 2vw, 2.5rem);
+  line-height: clamp(1.6rem, 2.2vw, 2.5rem);
   hyphens: auto;
   margin: clamp(0.625rem, 2vw, 1.25rem) auto;
   filter: blur(30px);
@@ -512,6 +512,21 @@ hr{
   
 }
 
+#video-background {
+  display: none; /* Hide the video by default */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  filter: blur(1px);
+filter:brightness(30px)
+ 
+}
+
 /* PAGE STYLES */
 
 /* page structure */
@@ -521,30 +536,7 @@ div.page-wrapper {
   padding: var(--margin);
 }
 
-/* navigation */
- 
-/* nav{
-  
-} */
 
-/* content */
-
-/* main{
- 
-} */
-
-/* summary{
-  
-} */
-
-
-
-
-
-
-/* UTILITY CLASSES */
-
-/* hide desktop mobile etc */
 
 .desktop-only {
   display: block;
@@ -554,14 +546,16 @@ div.page-wrapper {
   display: none;
 }
 
- 
+
 
 
 
 @media only screen and (max-width: 414px) {
-  body {
-    background-color: black; /* Set background color to black */
+ 
+  #video-background {
+    display: block; /* Show the video on screens with a maximum width of 414px */
   }
+
 
   h1{
     color: rgba(255, 255, 255, 0.9);
