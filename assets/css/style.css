@@ -512,20 +512,7 @@ hr{
   
 }
 
-#video-background {
-  display: none; /* Hide the video by default */
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1000;
-  filter: blur(1px);
-filter:brightness(30px)
- 
-}
+
 
 /* PAGE STYLES */
 
@@ -551,9 +538,8 @@ div.page-wrapper {
 
 
 @media only screen and (max-width: 414px) {
- 
-  #video-background {
-    display: block; /* Show the video on screens with a maximum width of 414px */
+  body {
+    background-color: black; /* Set background color to black */
   }
 
 
