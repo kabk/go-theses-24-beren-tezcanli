@@ -683,64 +683,9 @@ div.page-wrapper {
 }
 
 
-/* WEBSITE MEDIA QUERIES */
-
-/* styles for 'mobile', screen sizes up to 779px, should covers 'mobile' and 'tablet' */
-/* style this one first and then use the subsequent ones in a cascading way (from general to specific) */
-
-@media (max-width: 779px) {
-
-  /* your 'mobile' overriding css properties here */
-
-
-
-  /* utility classes, mobile */
-
-  .desktop-only{
-    display:none;
-  }
-
-  .mobile-only{
-    display:block;
-  }
-
-}
-
-
-
-/* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
-
-@media (max-width: 339px) {
-
-  /* your overriding css properties here */
-
-}
-
-
-
-/* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
-
-@media (max-width: 779px) and (orientation: landscape) {
-
-
-
-   /* your overriding css properties here */
-
-}
-
-
-
-/* use this query to apply style for 'small' desktop screens */
-
-@media (min-width: 780px) and (max-width: 992px) {
-
-  /* your overriding css properties here */
-
-}
-
-
 @media only screen and (max-width: 414px) {
   body {
     background-color: black; /* Set background color to black */
   }
 }
+
