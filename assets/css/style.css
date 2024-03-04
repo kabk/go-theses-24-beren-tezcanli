@@ -74,7 +74,9 @@ body {
   height:auto;
   overflow-y:auto;
   align-items: flex-start;
+
 }
+
 .page-wrapper {
   width: 100%;
   margin: 1px;
