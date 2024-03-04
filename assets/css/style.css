@@ -159,7 +159,7 @@ body {
   
  
 
-  h1:hover {
+h1:hover {
     filter: blur(0); /* Remove blur on hover */
   }
   
@@ -554,38 +554,91 @@ div.page-wrapper {
   display: none;
 }
 
+ 
 
-@media only screen and (max-width: 414px) { /* iPhone 12 Pro Max width */
-  /* Adjustments for smaller screen widths */
 
   
-  /* Specific adjustments for elements */
-  /* h2 {
-    font-size: 40px; /* Decrease heading size */
-    /* margin-right: 5px; /* Adjust margins */
-  /* } */  
 
-  #info-page{
-    color: rgba(255, 255, 255, 0.5);
-    text-shadow: 0 0 3px rgb(240, 240, 240), 0 0 3px rgb(240, 240, 240);
+@media only screen and (max-width: 414px) {
+  body {
+    background-color: black; /* Set background color to black */
+  }
+
+  h1{
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 5px rgb(240, 240, 240), 0 0 5px rgb(240, 240, 240);
     -webkit-text-stroke-width: 0.6px;
-    -webkit-text-stroke-color: rgb(240, 240, 240);
+    -webkit-text-stroke-color: rgb(255, 255, 255);
     mix-blend-mode: normal;
-    text-decoration: none;
     font-family: 'Gambarino';
-    font-size: 35px;
+    font-size: clamp(6.25rem, 20vw, 20rem); /* Adjust the min, max, and preferred font size as needed */
     font-weight: 800;
-    text-align: right;
-    letter-spacing: -0.02em;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -0.01em;
     line-height: 1em;
     word-spacing: 1px;
+    display: flex;
+    filter: blur(20px);
+    transition: filter 0.8s ease-in-out;
+ 
+  }
+
+
+#info-page{
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: rgb(240, 240, 240);
+  mix-blend-mode: normal;
+  text-decoration: none;
+  font-family: 'Gambarino';
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-weight: 800;
+  text-align: right;
+  letter-spacing: -0.02em;
+  line-height: 1em;
+  word-spacing: 1px;
+  padding-right: 20px;
+   margin-top: -40px;
+
+  }
+
+  #abstract p {
+    margin: 20px auto;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+    width: 80%; 
+    text-indent: 10px;
+    font-size: clamp(1.625rem, 4vw, 1.938rem);
+    letter-spacing: -0.001em; /* Adjust kerning */
+    line-height: 1.1em; /* Adjust line height for better readability */
+    font-family: 'Helvetica', sans-serif; /* Added generic sans-serif fallback */
+    text-shadow: 0 0 3px rgb(240, 240, 240), 0 0 3px rgb(240, 240, 240);
+    -webkit-text-stroke-width: 0.9px;
+    -webkit-text-stroke-color: rgb(231, 230, 230);
+    mix-blend-mode: normal;
+    filter: blur(20px);
+    transition: filter 0.5s ease-in-out;
+   
+  }
+
+  #introduction p {
+    text-indent: 20px;
+    font-size: 18px;
+    hyphens: auto;
+    margin: 20px auto;
+    width: 80%;
     filter: blur(30px);
     transition: filter 0.5s ease-in-out;
-    padding-right: 20px;
-    margin-top: -35px;
+    /* text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(240, 255, 255, );
+    -webkit-text-stroke-width: 0.6px; 
+   -webkit-text-stroke-color: rgb(255, 255, 255);  */
+    
+   }
 
-  
-    }
   #column-2 p {
 
     margin: 20px auto; /* Center the paragraph horizontally */
@@ -599,20 +652,6 @@ div.page-wrapper {
   
    
   }
-
-  #introduction p {
-    text-indent: 20px;
-    font-size: 14px;
-    hyphens: auto;
-    margin: 20px auto;
-    width: 55%;
-    filter: blur(30px);
-    transition: filter 0.5s ease-in-out;
-    /* text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(240, 255, 255, );
-    -webkit-text-stroke-width: 0.6px; 
-   -webkit-text-stroke-color: rgb(255, 255, 255);  */
-    
-   }
  
    img {
     width: 15rem;
@@ -683,9 +722,4 @@ div.page-wrapper {
 }
 
 
-@media only screen and (max-width: 414px) {
-  body {
-    background-color: black; /* Set background color to black */
-  }
-}
 
