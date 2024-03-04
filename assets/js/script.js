@@ -4,19 +4,29 @@ $(document).ready(function() {
 
 // functions go here
 
-navigator.mediaDevices.getUserMedia({ video: true })
-    .then(function (stream) {
-        var videoElement = document.getElementById('camera-preview');
-        videoElement.srcObject = stream;
+function isDesktop() {
+    // Regular expression to match common desktop user agents
+    var desktopRegex = /Linux|Windows|Macintosh/i;
+    return desktopRegex.test(navigator.userAgent);
+}
 
-        // Apply CSS filter for black and white effect
-        videoElement.style.filter = 'grayscale(100%)';
-        videoElement.style.filter = 'brightness(70%)';
-    })
-    .catch(function (error) {
-        console.error('Error accessing the camera:', error);
-    });
-    navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+// Check if the user is accessing from a desktop computer before executing getUserMedia
+if (isDesktop()) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+            var videoElement = document.getElementById('camera-preview');
+            videoElement.srcObject = stream;
+
+            // Apply CSS filter for black and white effect
+            videoElement.style.filter = 'grayscale(100%)';
+            videoElement.style.filter = 'brightness(70%)';
+        })
+        .catch(function (error) {
+            console.error('Error accessing the camera:', error);
+        });
+} else {
+    console.log('This feature is only available on desktop computers.');
+}
 
     document.getElementById('aki-hoshide').addEventListener('click', function() {
         var img = document.getElementById('aki-hoshide-img');

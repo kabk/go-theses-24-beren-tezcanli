@@ -68,7 +68,6 @@ html {
 
 body {
   position: absolute;
-  /* background-color: var(--color-background); */
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
   width:100%;
@@ -130,8 +129,8 @@ body {
  
   scroll-snap-align: start;
   display: flex;
-flex-direction: column;
-justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   
   }
 
@@ -313,9 +312,9 @@ a:hover {
 
 h2{
   color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 0 3px rgb(240, 240, 240), 0 0 3px rgb(240, 240, 240);
-  -webkit-text-stroke-width: 0.9px;
-  -webkit-text-stroke-color: rgb(231, 230, 230);
+  text-shadow: 0 0 8px rgb(240, 240, 240), 0 0 8px rgb(240, 240, 240);
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
   mix-blend-mode: normal;
   font-family: 'Gambarino';
   font-size: clamp(2.7rem, 5vw, 3.5rem);
@@ -692,6 +691,7 @@ div.page-wrapper {
   /* your 'mobile' overriding css properties here */
 
 
+
   /* utility classes, mobile */
 
   .desktop-only{
@@ -719,7 +719,9 @@ div.page-wrapper {
 /* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
 
 @media (max-width: 779px) and (orientation: landscape) {
-  
+
+
+
    /* your overriding css properties here */
 
 }
@@ -735,3 +737,6 @@ div.page-wrapper {
 }
 
 
+@media only screen and (max-width: 414px) { /* iPhone 12 Pro Max width */
+  
+}
