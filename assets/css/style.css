@@ -571,24 +571,32 @@ div.page-wrapper {
     -webkit-text-stroke-color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     font-family: 'Gambarino';
-    font-size: clamp(2.7rem, 5vw, 3.5rem);
+    font-size: clamp(2.4rem, 5vw, 1rem);
     font-weight: 800;
     text-align: center;
     letter-spacing: clamp(-0.02em, -0.5vw, 0.02em);
     line-height: 1em;
     word-spacing: clamp(1px, 0.5vw, 2px);
-    margin-top: 5px; 
-    margin-right: 10px; 
+    margin: 20px auto;
   
   }
   
+  .key-words p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    filter: blur(3px);
+    transition: filter 0.5s ease-in-out;
+    font-size: clamp(1.5rem, 3vw, 2rem) !important;
+
+  }
   
 
 
 #info-page{
   color: rgba(255, 255, 255, 0.5);
   text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
-  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-width: 0.4px;
   -webkit-text-stroke-color: rgb(240, 240, 240);
   mix-blend-mode: normal;
   text-decoration: none;
@@ -611,12 +619,12 @@ div.page-wrapper {
     text-align: center;
     width: 80%; 
     text-indent: 10px;
-    font-size: clamp(1.625rem, 4vw, 1.700rem);
+    font-size: clamp(1.2rem, 1vw, 1.3em);
     letter-spacing: -0.001em; /* Adjust kerning */
     line-height: 1.1em; /* Adjust line height for better readability */
     font-family: 'Helvetica', sans-serif; /* Added generic sans-serif fallback */
     text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
-    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: rgb(231, 230, 230);
     mix-blend-mode: normal;
     filter: blur(10px);
@@ -632,6 +640,9 @@ div.page-wrapper {
     width: 80%;
     filter: blur(10px);
     transition: filter 0.5s ease-in-out;
+    text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: rgb(231, 230, 230);
     
    }
 
@@ -644,7 +655,7 @@ div.page-wrapper {
     vertical-align: middle;
     letter-spacing: -0.02em;
      line-height: 1.1em;
-     width: 350px;
+     width: 320px;
   
    
   }
@@ -665,7 +676,7 @@ div.page-wrapper {
     vertical-align: middle;
     letter-spacing: -0.02em;
      line-height: 1.1em;
-     width: 350px;
+     width: 320px;
   
   }
   
@@ -678,7 +689,7 @@ div.page-wrapper {
     vertical-align: middle;
     letter-spacing: -0.02em;
     line-height: 1em;
-    width: 350px;
+    width: 320px;
   
   }
   
