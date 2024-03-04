@@ -1,31 +1,621 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
 
-    <h1>Title</h1>
-    <h2>Subtitle</h2>
+	<head>
 
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sem ut enim placerat sollicitudin eu ac orci. Donec pellentesque iaculis nisi sed faucibus. Duis fermentum leo mi, eu tempus odio consequat a. Donec euismod consectetur mi, tempor vehicula nunc semper imperdiet. Nunc vestibulum, odio nec tempus bibendum, lectus sapien auctor tortor, pellentesque vulputate odio magna eget mauris. Nam facilisis in odio a ornare. Aenean vitae ex sit amet lectus finibus interdum.
-    </p>
-    <figure class="cat-1">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Cat_yawn_with_exposed_teeth_and_claws.jpg/2560px-Cat_yawn_with_exposed_teeth_and_claws.jpg" alt="Crazy cat" srcset="">
-<figcaption>
-    This is where you can elaborate on cats in general and on Crazy cat in particular
-</figcaption>
-    </figure>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sem ut enim placerat sollicitudin eu ac orci. Donec pellentesque iaculis nisi sed faucibus. Duis fermentum leo mi, eu tempus odio consequat a. Donec euismod consectetur mi, tempor vehicula nunc semper imperdiet. Nunc vestibulum, odio nec tempus bibendum, lectus sapien auctor tortor, pellentesque vulputate odio magna eget mauris. Nam facilisis in odio a ornare. Aenean vitae ex sit amet lectus finibus interdum.
-        </p>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-</main>
-</body>
+		<!-- meta tags, fill them with website meta infos -->
+		<meta name="description" content="Description of your web page" /> 
+		<meta name="keywords" content="Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5 ..."/> 
+		<meta name="author" content="Name of the author/owner of the webpage's content" />
+
+		<!-- favicon, fill with a 512x512px .png image named 'favicon.png' -->
+		<link rel="icon" href="assets/images/favicon/favicon.png"/>
+
+		<!-- website title, visible in the browser window and on link sharing -->
+		<title>Website title</title>
+
+		<!-- links for extensions and dependencies -->
+
+		<!-- css -->
+		<!-- first link your CSS dependences, here is normalize, a CSS 'reset' for cross-browser appearence uniformity -->
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<!-- you stylesheet -->
+		<link rel="stylesheet" href="assets/css/style.css?ver=1.0">
+
+		<!-- js -->
+		<!-- first link your javascript dependencies, here as an example is Jquery -->
+		<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+		<!-- your function scripts -->
+		<script type="text/javascript" src="assets/js/script.js?ver=1.0"></script>
+	    
+	</head>
+
+	<body>
+		
+
+		<!-- webpage content goes here -->
+		
+			<header>
+
+				<!-- <h1> Hello World!</h1> -->
+				<!-- <p>A <strong>document</strong> by <em>me</em></p> -->
+
+				<!-- <nav>
+					<ul>
+						<li><a href="#intro">Introduction</a></li>
+						<li><a href="#chapter-1">Let Me Take a Selfie</a></li>
+						<li><a href="#chapter-2">Gimme More, Gimme More, Babe</a></li>
+						<li><a href="#chapter-3">It’s Just An Illusion</a></li>
+						<li><a href="#epilogue">Conclusion</a></li>
+					</ul>
+				</nav> -->
+
+			</header>
+			
+			<main>
+				
+
+				<main class="columns-container">
+
+					<div class="column" id="landing-page">
+					 
+						<h1 id="title">BEHIND THE LENSE</h1>
+
+
+					
+						<p id="bachelor-thesis">
+						Bachelor Thesis written by Beren Tezcanli, Graphic Design Department Royal Academy of Arts The Hague 2024
+					  </p>
+	
+
+					</div>
+					
+					<div class="column" id="info-page">
+					 
+						<ul>
+							<li><a href="#abstract">Abstract</a></li>
+							<li><a href="#introduction">Introduction</a></li>
+							<li><a href="#column-2">Let Me Take a Selfie</a></li>
+							<li><a href="#column-3">Gimme More, Gimme More, Babe</a></li>
+							<li><a href="#column-4">It’s Just An Illusion</a></li>
+							<li><a href="#column-5">The End</a></li>
+							<li><a href="#column-7">Bibliography</a></li>
+						</ul>
+					</div>
+					
+					<div class="column" id="abstract">
+						<h2 id="info"><a href="#info-page">Abstract</a></h2>
+
+                  
+						<p>
+							This research examines the multifaceted aspects of the camera (in any form), exploring its effects within and on mass media, daily politics, hyper-capitalism, beauty standards, public consumption, and how it induces oppression in relation to psychological behaviors. By navigating through the interplay of these elements, the writing aims to provide a broad understanding of how the increase of cameras has shaped societal dynamics. The research unfolds a narrative that begins with camera culture/aesthetics, its influence on mass media narratives, its role in shaping societal standards, and the relation between hyper-capitalism and public consumption. The study searches through the link between psychological behaviors and their impact on individuals and collective behavior. Through the exploration of these dimensions, it aims to uncover the complicated nature of camera culture and how it impacts modern society.
+
+
+						</p>
+
+					
+						<p>
+							In a camera-centric environment, what are the impacts of the camera culture, on both individual perspectives and the overarching collective dynamics of society?
+
+								
+							</p>
+						</div>
+					</div>
+
+					<div class="column" id="introduction">
+						<h2 id="intro"><a href="#info-page">Introduction</a></h2>
+				
+				
+		
+                
+				<p>
+				
+					“Are you ready? Keep smiling. 1,2,3 say cheese!” Does this digital sentence sound familiar from somewhere? It sounds very familiar to me. Camera in its simple meaning: a device for recording visual images in the form of photographs, film, or video signals.<sup><a href="#column-7">1</a></sup>  Cameras have always been a part of my family and my life. My initial encounter with a camera occurred at an early age, during my birth in 2002. Since 2002 cameras involuntarily played a big role and are still part of my life.
+
+				</p>
+
+				<p>
+				
+					I remember me and my twin playing, my dad holding a big camera and capturing every single moment with his voice behind the camera. Us smiling at the camera, trying to speak, trying to say mom, trying to grow. Natural.
+		
+				<p>
+				
+                    I find footage of myself, I’m 13, singing, filming myself. It’s a digital camera. I’m holding the camera in reverse, I don’t see my face, I don’t see what I’m filming. Innocent. I don’t care about how I look; I don’t care about what I wear, I don’t care about how bad or well I sing. Honest.
+
+			   </p>
+
+				<p>
+                    I recall this moment: having dinner with my family and taking a photo before we started. Me being annoyed. One person always got up from the table to take the picture with the phone and one person was missing from the picture and the moment. A fake environment is created. “1,2,3 say cheese!” Everybody smiles for 3 seconds and afterwards, everybody eats. As nothing happened. Fake.
+
+				</p>
+
+				<p>
+					I recollect the memory; me and mum. In The Hague, sitting in a café. I order a coffee for both of us. The coffee arrives, and mum takes her phone out. Telling me not to drink, first taking a picture of the coffee, then taking a picture of herself with the coffee. Sharing the picture on Instagram as a story, checking the viewers, and counting them. Not staying in the moment, not staying with me. Focused on the story of the image. Focused on the perception of the image. Focused on the digital world. Selfish?
+				</p>
+
+				<p>
+                    In the following chapters, I will delve into the different perspectives of cameras and take you to different angles of cameras. Exploring the aesthetics of the camera, exploring the self-perception of the camera, exploring the male gaze of the camera, exploring the standards of the camera, and exploring the reality of the camera. Exploring the camera as a ‘virtual playground’.
+				</p>
+
+			</div>
+
+
+			<div class="column" id="column-2">
+
+				<h2 id="chapter-1"><a href="#info-page">Let Me Take a Selfie</a></h2>
+
+				
+				
+				<div class="key-words">
+				<p >
+					I exist.
+				</p>
+			</div>
+
+				<p>
+					In 2013, the Oxford English Dictionary announced that its word of the year was ‘selfie’, which it defined as “a photograph that one has taken of oneself, typically one taken with a smartphone or webcam and uploaded to social media.” <sup><a href="#column-7">2</a></sup> Each selfie is a performance of a person as they hope to be seen by others.<sup><a href="#column-7">3</a></sup> In December 2012, Japanese astronaut <span class="blurred-text" id="aki-hoshide">Aki Hoshide</span> snapped a unique selfie in space, diverting the camera from the mesmerizing views of Earth, space, and the moon to focus on himself. The term ‘self-portrait’ comes from early photography exploration. It was an experiment where the photographer had to act as a model as well. The first-ever ‘selfie’ was taken by a photographer; Robert Cornelius in 1839. This act supports the notion that the term ‘me addiction’ and the desire for self-expression have existed since an early age and have increased over the years with the culture of social media and the lens of technological advancements. This action depicts Hoshide’s desire to gain attention, to be seen, and to be recognized. In How to See the World Nicholas Mirzoeff describes; “How the image of planet Earth was earlier the focus, how the Blue Marble was the protagonist. 40 years later we see planet Earth as a mere reflection in the vizor of the astronaut.” 
+					<sup><a href="#column-7">4</a></sup>
+				</p>
+		
+					<img src="assets/images/Hoshide.jpg" class="hidden-image" id="aki-hoshide-img">
+					<div class="caption" id="caption" style="display: none;">Figure 1. Hoshide, Untitled, selfie.</div> 
+		
+			
+				
+				<p>
+					We live in a world, which doesn’t certainly mean it is equally available for all of us. However, the world is changing. Nowadays everybody has their own phone, including the elderly. Everything is approachable. The world we live in right now is not the same as it was five years ago. In the world we are living in right now, 93 million selfies are taken each day, with at least 100 appearing on social media. Each one is a unique self-portrait, a performance, a tool for people to prove themselves. Desirability is transmuted into the trans-actional. We are trained to never be satisfied, in a landscape where everybody is not only replaceable but upgradeable.<sup><a href="#column-7">5</a></sup> All media are social media. We use them to depict ourselves to others. We use them to gratify our needs. We use them to satisfy needs of self-presentation, habit, attention-seeking, entertainment, and status-seeking.<sup><a href="#column-7">6</a></sup>
+					We are using our bodies as extensions: clicking, taking, linking, and sharing selfies.
+				</p>
+				<p>
+					There are two kinds of selfies, in terms of content. One is a performance for your digital circle, and the other is the celebrity selfie, which extends and maintains the fame of its subject, such as Kim Kardashian. Kardashian is known for her role in the series Keeping Up with The Kardashians, and her selfies, displaying her body and face in different poses, but this desire remains unclear. In 2015 Kim Kardashian published a 445-page book called "<span class="blurred-text" id="“selfish”">Selfish</span>". In the book, Kardashian shared her unseen self-portraits. One might remark that it's difficult to imagine that we haven't seen all images of this person since they appeared on Keeping Up with The Kardashians, which has been the key to their enduring fame. 
+				</p>
+
+				<img src="assets/images/Kardashian.jpg" class="hidden-image" id="kardashian-img">
+				<div class="caption" id="caption-2" style="display: none;">Figure 2. Kardashian, Kim. Selfish. Rizzoli, 2016</div> 
+
+				<p>
+					Kardashian was sharing her private self-portraits with the details of her life. The book features Kardashian's old and new photos, including topless shots, giving readers a behind-the-frames. Kardashian wanted to reveal the unseen by this action. Kardashian was forcing the reader to look at her the exact way she wanted the reader to, from the exact angle, in the exact lighting of her choosing. Kardashian started putting her audience to certain standards and patterns. Kardashian depicts her needs through self-portraits. She has the hunger to be seen, to get attention. Kim took 6,000 selfies on her 4-day Mexico vacation in 2016, which equates to 1,500 selfies per day with 1,500 different poses and filters. Filters like “Paris”, “Los Angeles”, “Oslo”. Filters like tools that change the way we look, make us flawless by filtering out flaws and fixing certain parts of reality we perceive.
+				</p>
+				
+					
+				<p>
+					We are in control when we are taking a selfie. We change the angle of the camera, we change the light set-up, we choose a filter... However, there is a certain self-portrait where we don’t have control of the set-up. The one photograph where we all look equal yet so different. The one photograph that we all have: is passport photographs. It is a typical portrait set-up. People know to stay still and look into the lens. Most of the people do not smile. There is a time limit. People cannot take as many portraits as they want. “It is a constrained set-up yet there is some enactment of a persona.”<sup><a href="#column-7">7</a></sup>  It is alive. It speaks. But how does the audience react to the picture-making in an era where everyone can take a good one? The power balance had shifted. It is no longer how we control our images; it is about how we look and how we want to be seen in the world where images of celebrities and influencers have become financial assets.”<sup><a href="#column-7">8</a></sup> To take the “perfect” selfie poses and angles play a big role. There are certain poses where you can look sexy. There are certain poses where you can look cute. There are certain poses where you can take a good selfie and can “slay”.
+				</p>
+
+				<p>
+					“In the 18th century, <span class="blurred-text" id="camper">Pieter Camper</span>, a Dutch physician, popularized the 'facial angle' by measuring Greco-Roman statues. He proposed ideal angles: Europeans at 80 degrees, Asians and Black individuals at 70 degrees, and orangutans at 58 degrees, advancing cranial morphology understanding.”<sup><a href="#column-7">9</a></sup> This proposition may have fostered the roots of the problematic notions of beauty, and racialized sense of beauty.
+				</p>
+
+				<img src="assets/images/Petrus Camper.jpg" class="hidden-image" id="camper-img" style="mix-blend-mode: luminosity;">
+				<div class="caption" id="caption-3" style="display: none;">Figure 3. Camper, Pieter. The Works on the Connexion, drawing.</div>
+				
+				<p>
+					He established facial angles as the standard for beauty. With Camper’s proposition, today’s beauty standards are determined. The hierarchy is determined. The search for essential beauty began. Needless to say, should be that these are highly contested notions of beauty. This search for beauty is visually transformed and transmitted into our lives as the filters that we see on digital media. The selfie has become so dominant as a form, that it is shaping technology. The digital media is one of the powerful sources to master the "perfect" selfie. On YouTube, it is very accessible to find selfie tutorials. Type in “How to take a selfie”, see the categories, see the categorization. How to take a selfie for guys, how to take a selfie like a model, how to take a selfie like a pro, and how to take a selfie for “Tinder”. These patterns demonstrate society's desire for conformity, the need for validation, and the pursuit of perfection in self-representation. Digital media prepares us to fit into beauty standards and patterns. Is there space to disobey these standards? Is there an attempt to escape from these standards?
+				</p>
+
+				<p>
+					<span class="blurred-text" id="blas">Zach Blas</span>: an artist whose work revolves around facial recognition technologies. In his work, Face Cages (2011-14) he opposes the term “capture” which describes how bodies and identities become algorithmically standardized to be informatically legible.<sup><a href="#column-7">10</a></sup> Therefore, he masks the ability to capture the face, he masks the standardization. He escapes from the standards; he rejects the recognition. 
+				</p>
+
+				<img src="assets/images/Zach Blas.jpeg" class="hidden-image" id="zach-blas-img">
+				<div class="caption" id="caption-4" style="display: none;">Figure 4. Blas, Zach. Face Cages, image.
+				</div> 
+
+				<p>
+					We are becoming the technologies of self. More than 1,000 products are being developed to make selfies better. The filters that social media provides us are very accessible and realistic. This reality on social media drags us into an endless hole. People are seeking cosmetic procedures to look like their filtered selfies.<sup><a href="#column-7">11</a></sup> These photos typically feature "fuller lips, bigger eyes, or a thinner nose" than the patients have in real life.<sup><a href="#column-7">12</a></sup> As a British cosmetic doctor suggests; “social media has made people more visually aware than ever before," and therefore "more critical" of themselves”.<sup><a href="#column-7">13</a></sup> Especially for younger generations, this creates mood, body, and facial dissatisfaction at baseline. This creates a comparison between the user and the filters. This creates a non-existing beauty standard. This creates an abnormal normal perception. This creates an augmented reality.
+				</p>
+
+				<p>
+					Finding myself filming a TikTok, using the ‘retouch’ effect. I don’t remember selecting the filter. Realizing that the algorithm of TikTok puts it on automatically. Turning the filter off. Feeling dissatisfaction when I see the scars, the texture, the reality on my face. Will I be able to bare to see my face in the future without the filters?
+				</p>
+			</div>
+			
+			<div class="column" id="column-3">
+
+				<h2 id="chapter-2"><a href="#info-page">Gimme More, Gimme More, Babe</a></h2>
+
+				<div class="key-words">
+				<p>
+					They exist. 
+					
+				</p>
+             </div>
+
+				<p>
+					Seeing is changing, what we see is changing, and how we see is changing. The viewer is changing, the context is changing. “TikTok” is the fastest-growing social media platform, and it pictures the big change in the social media circle. TikTok becoming a “virtual playground” for the new generation and meanwhile their escape from reality. Or should I say the new reality for them? People consume the content for information and entertainment; participate in social interaction and community development; and produce for self-expression and self-actualization.<sup><a href="#column-7">14</a></sup> But is it only the entertainment that is being consumed? TikTok is changing the culture, our values. The shift in girls’ "bedroom culture," a concept by sociologist Angela McRobbie, from private and judgment-free to publicly visible, is evident on TikTok. Most of the girls are filming in their bedrooms.<sup><a href="#column-7">15</a></sup>  The transformation of camera culture into something fast, consuming, competitive, addictive, threatening, not private....
+					
+				</p>
+				
+				<p>
+					TikTok is spreading the idea that “everyone can become famous”. To support this judgement let me introduce a name: Addison Rae. Nowadays a white famous TikTok celebrity. 2019, she posted her first TikTok. Casual. Natural. Just for fun. Now, she has 36,5 Million followers on Instagram and 88,7 Million followers on TikTok. She is famous. The new generation emulated this idea. The new generation saw how easy and fast it was to become famous. The new generation searched for interaction. The underlying reason for this search is the desire for attention. TikTok is a powerful tool that provides its users with opportunities such as editing videos, making them more interesting (sound effects, filters, tags), and interacting with other users (use of unique hashtags, challenges, the algorithm), thus making it possible to present the digital self effectively. But what is the content that is being gazed at on TikTok? What kind of context people are trying to fit themselves into? Are they showcasing their true selves, or are they in pursuit of an alternate identity?
+				<p>
+					On TikTok, as everywhere else in our social media outlets and the world of film and advertisement, the male gaze is dominant. You want to look beautiful and presentable for the notion that someone may be watching or judging. As Laura Mulvey writes in her essay, “Visual Pleasure and Narrative Cinema”, 1975: Under the male gaze, women are to be looked at and displayed, with their appearance coded for strong visual and erotic impact so that they can be said to connote “to-be-looked-at-ness”.<sup><a href="#column-7">16</a></sup>  The knowledge surrounding the male gaze transformed into the “main character” trend on TikTok. This trend evolves around women, consisting of women posting videos of themselves, walking, reading, existing, and “romanticizing” their lives while trying to appear purposely mysterious. It encourages the idea in women’s minds that women should always try to look sexy and attractive and that the man of our dreams is gazing at and admiring us from a distance. However, the damaging consequences of this trend on women are not frequently discussed.
+				</p>
+
+				<p>
+					This trend has arisen from centuries-old depictions of women in literature, and cinema. In these mediums, women were portrayed in an idealized way. The roots of this idealization come from the patriarchal system; the same language that has been spoken for ages... Cinema can be shown as one of the strong visual explanations of this example. Due to the existence of a patriarchal culture industry, mainstream films show a pattern when presenting both male and female characters. A man holds power, and the female character is displayed as a sexual object, which suits the male character’s desires and visual pleasures.<sup><a href="#column-7">17</a></sup>  Mulvey describes this as the term; “The Male Gaze” in her “Visual Pleasure and Narrative Cinema” essay (1975). The control of the camera, the angle of the camera, the framing of the camera, the point of view of the camera... Consequently, the woman becomes objectified, influenced by the idealized image presented in cinema. “The woman displayed has functioned on two levels: as an erotic object for the characters within the screen story, and as an erotic object for the spectator within the auditorium. In other words, the heterosexual male character is not the erotic object of the gaze, but one of the more perfect, powerful ideal egos conceived who can make things happen and control events where he displays his dominance.”<sup><a href="#column-7">18</a></sup>  Yet, the camera allows us to understand, how we interpret, how to observe the scene.
+
+
+				</p>
+
+
+				<p>
+					One of the phenomena of the camera angles: The Wolf of The Street by Martin Scorsese. The movie revolves around the life of Jordan Belfort (Leonardo Di Caprio) who is a finance scam artist. From the beginning, the film introduces and depicts women as objects that can be purchased like food. It objectifies them. Women are displayed as “sorely lacking in depth, strength and feminism” yet Belfort is depicted as the strong, bold, confident, white man. Naomi (Margot Robbie), Belfort’s second wife is coded all over.<sup><a href="#column-7">19</a></sup>  Coded with the male gaze. Coded with male centered. Coded with androcentrism which refers to the propensity to center society around men and men's needs, priorities, and values and to relegate women to the periphery.<sup><a href="#column-7">20</a></sup>  In the first scene, she appears as the idealized, blonde woman with a skintight blue mini dress with a cutout revealing a good part of each breast. The camera captures Naomi with the gaze of Belfort while two other friends in a conversation:
+
+				<blockquote>
+					- I would fuck that girl if she were my sister. 
+               
+ 
+				</blockquote>
+
+				<blockquote>
+					
+                    - I would let that girl give me fucking AIDS.
+ 
+				</blockquote>
+
+				<p>
+					The camera doesn’t show the men as they are talking but emphasizes Naomi as an object that men are determined to attain. That they can prey upon, measure, discuss, own. She exists only in relation to Belfort. Not only Naomi was being put under the male gaze, but the woman in the office is mistreated. The scene when a female employee agrees to have her head shaved in front of the trading floor in exchange for 10.000 dollars which she wants to use for D-cup breast implants. It represents a female character with a materialistic attitude. It represents a fetish object or turns the represented figure itself into a fetish so that it becomes reassuring rather than dangerous.<sup><a href="#column-7">21</a></sup>  Never feeling the self-satisfaction and always trying to please. In another provocative scene, Naomi is teasing Belfort in a very scandalous outfit. The point of view alternates between <span class="blurred-text" id="belfort">Belfort’s</span> eyes and <span class="blurred-text" id="naomi">Naomi’s</span> erotic leg.<sup><a href="#column-7">22</a></sup> 
+				</p>
+
+                <img src="assets/images/Movie scene.jpeg" class="hidden-image" id="movie-scene-img">
+				<div class="caption" id="caption-5" style="display: none;">Figure 5. DiCaprio Leonardo, Robbie Margot. The Wolf of The Wall Street, movie.</div> 
+
+
+				<p>
+					The audience finds themselves inside this very sexualized scene. The second shot reveals the infatuated look on Belfort’s face. This scene can be supported by Mulvey’s argument where she proposes: “the conscious aim is always to eliminate intrusive camera presences and prevent a distancing awareness in the audience”.<sup><a href="#column-7">23</a></sup>   Thus, the illusion of reality engages the audience emotionally without disrupting the intended narrative experience. What is being depicted in cinema is the illusion of the reality that the cinema shaped.
+				</p>
+
+				<blockquote>
+					"Media manipulation of images has become so powerful that it can create what I refer to as an icon of the self; the commodity self." - bell hooks
+                </blockquote>
+
+				<p>
+					Media manipulates images. Images shape our representations. Representations create the icon of ourselves. The icon creates the aesthetic. The aesthetic perception: "glossy-glam aesthetic." Flawless, shiny, clean, sterilized, HD. We don’t see pixels anymore. We don’t want to be pixelated. We want to be seen as “sleek” as possible. The concern of our aesthetics increases with the emerging media. We see manipulated images in media. This influences our self-image, resulting in a disparity in our desired external image. Kate Cooper, a British artist, inspires immediate physical and aesthetic attraction. Her exhibition <span class="blurred-text" id="rigged">Rigged</span> at the KW Institute for Contemporary Art in Berlin looks at the agency of the computer- generated female within the glossy aesthetics of consumer capitalism.<sup><a href="#column-7">24</a></sup> As technology diversifies the body it becomes difficult to understand what and whose body is it and what is being performed. “The image of woman is constantly changing,” Cooper says. Through the objectification of the digital bodies: “In all images, particularly of women, there’s a relationship to desire, and within that a real violence.”<sup><a href="#column-7">25</a></sup>  The female body is seen as a commodity. But how do we participate in these images?
+
+                </p>
+                    <img src="assets/images/Kate Cooper.jpeg" class="hidden-image" id="Kate-cooper-img">
+                    <div class="caption" id="caption-6" style="display: none;">Figure 6. Cooper, Kate. “Rigged” Exhibition, Berlin.</div> 
+
+                    <p>
+					The first digital virtual model: <span class="blurred-text" id="Shudu">Shudu Gram</span>. A brown flawless skin, and a stunning body with symmetrical features. We’ve become so accustomed to false realities on Instagram. False realities that we are adopting to be approved and accepted by society. Shudu blurred the line between reality and fantasy. Shudu is a computer-generated personality, created in 2017 by a white photographer Cameron-James Wilson. He was inspired by the South African “Barbie doll” called Princess of South Africa. Shudu was portraying the “ideal” beauty standard of Wilson. Wilson explains; "I am just a creative person, and to me, she is what the most beautiful woman in the world would look like."<sup><a href="#column-7">26</a></sup>  He intended to create someone to fit into his beauty standard. Unfortunately, he is completely unaware of his positive racist thinking and abuse of black subjects. Another example: <span class="blurred-text" id="Miquela">Miquela Sousa</span>., an artificial model created by Trevor McFedries & Sara Decou. She is depicting her best self, with her different style and flawless skin with freckles. She has 2.6 million followers on Instagram. She has the real gaze with the unreal elements. The unreal is becoming more real. It’s all fake and we love fake. These mediums are determining the new “aesthetic perception”. Women compare themselves with pixels and try to fit into certain unreal beauty standards. Do we have freedom within the images, or do we create our restrictions within these images? 
+				</p>
+
+                <img src="assets/images/Shudu.jpeg" class="hidden-image" id="shudu-img">
+                <div class="caption" id="caption-7" style="display: none;">Figure 7. Shudu. a computer-generated personality, image.</div> 
+
+
+                <img src="assets/images/Miquela.jpg" class="hidden-image" id="miquela-img">
+                <div class="caption" id="caption-8" style="display: none;">Figure 8. Sousa, Miquela. a virtual influencer, image.</div> 
+
+			</div>
+
+			<div class="column" id="column-4">
+				<h2 id="chapter-3"><a href="#info-page">It's Just An Illusion</a></h2>
+
+
+				<div class="key-words">
+				<p>
+					Who wants to exist?
+				</p>
+			   </div>
+
+				<p>
+					What is the reality being depicted behind the camera lenses? Can we even discriminate between what is real and what is not? How often do people perform their real selves in front of cameras? Robbie Williams: an English singer and songwriter. Known for his fame starting from an early age in a boy group. Year: 2006, Williams performs a live show in Leeds in front of 90,000 people. He feels overwhelmed by the pressure. During the show, Williams experiences a panic attack.
+				</p>
+
+				<p>
+					Where he describes the panic attack “Last night was an absolute disaster for me. I developed a panic attack before I went on that didn’t finish through the performance.”<sup><a href="#column-7">27</a></sup>  He couldn’t cut the show halfway because of the pressure, because of the reality. He acted, acted as if everything was fine. This was shown to more than 100,000 people. The pressure of the camera, the pressure of the transmission, the pressure of the reality was alive, it was LIVE. Williams begged to quit the tour but continued it as if everything was “okay”. Not everything depicted on cameras is real, not every action we see is real or let’s say authentic, many things are staged FOR the camera. What happens once the cameras and the spotlights are turned off remains another aspect. One could argue then that what is shown on the screen is selected, framed, and well-chosen. What we wish to believe is either a story or maybe the reality.
+				</p>
+
+				<p>
+		
+				</p>
+
+				<p>
+                    A depiction of reality with cameras, with scripts. A genre talking about reality, redefining beauty ideals. A genre creating sudden fame. A genre that influences almost every path of life. We have all watched a reality show at least once in our lives, despite being aware that this genre often fails to accurately portray reality (of many). There is a direct connection between watching reality TV and voyeurism and certainly conjures up images of looking through people’s windows and obsessing over someone’s private life. We all desperately want information about how others live their lives because we want to know how to live ours. However, we have been taught that this desire is nothing more than unjustified curiosity.”<sup><a href="#column-7">28</a></sup>   Yet, I would like to emphasize the contrast that, the chosen candidates are the people who want to be gazed at, gain curiosity, and share their privacy. There’s research that suggests that the more narcissistic a person is, the more they engage with social media, the more friends they have on social media, and the more time they take to curate their persona."<sup><a href="#column-7">29</a></sup>   These people have a strong desire to be recognized. But do we know how often reality shows portray the real selves of the candidates or does it become a dystopia like “The Truman Show.” Where their emotions and personal experiences are turned into commodities to be consumed by viewers.
+				</p>
+
+				<p>
+                    The show begins with choosing the candidates. Contestants that are chosen by audience gaze. Selected narratives. The selected reality they want to display. They create stereotypes. They provide a fabricated world. They choose the outfit. Finally, they manipulate. They filter out. I would like to support this argument with a well-known reality show: Big Brother. A reality show in which 10 real-life strangers live together in isolation for three months under continuous observation (over 100 cameras) to compete for a $500,000 prize.<sup><a href="#column-7">30</a></sup> 10 strangers sharing their privacy, sharing their values for the prize, for the fame, for the attention in front of the gaze of the public. This show is being showcased as a game. But when is a game, not a game anymore?
+				</p>
+
+				<p>
+                    A game stops being a game when it negatively affects people, causing anxiety, portraying them as commodities, or manipulating their personalities. Melanie Hill who is a former Big Brother contestant shares her disappointment that the show’s editing was displayed from a dominant male gaze perspective and a “stereotypical” persona. Hill describes; “I had been portrayed as a total flirt, someone who was completely self-obsessed, a bit of a shameless hussy." She mentioned her surprise at the producers' decision to show her "tidying her bikini line". In 2002, she said: "Over and over again was the sight of my bottom - in a bikini, in the shower - or of me kissing all the boys."<sup><a href="#column-7">31</a></sup> The manipulative attitudes are active and being used to fit the characters into certain stereotypes. The reason for this is the fascination with observing stereotypes from the audience. We use the TV as a mirror, watch ourselves, and therefore critique ourselves. This fact supports the reason why reality shows are being watched extensively by society; to judge ourselves, to reflect on ourselves. Yet, Melanie was unequivocally treated as a commodity on TV, violently, and her character was blatantly manipulated. This demonstrates the power dynamics present behind the camera and the continuous influence of patriarchal hierarchy.
+				</p>
+
+                <p>
+                    A game is not a game anymore when people are suffering from anxiety: Paloma Aguilar. Paloma is a former Big Brother contestant who quit the show because of her mounting anxiety. After returning to the outside world she expressed herself; "I left because of an ongoing mental health battle I faced which began once inside the walls of an idealistic utopia of a reality set. A reality that was far from the reality of my San Diego life.”<sup><a href="#column-7">32</a></sup> This incident highlights that reality shows can cause anxiety, and depression and distort one's perception of reality. It transforms into a deceptive representation of who we are. It transforms into an illusion where the line between reality and fantasy is blurry. People start losing touch with reality. People get manipulated by the reality that has been created. 
+				</p>
+
+
+            <blockquote>
+                    "Reality shows have a curious ability to make the familiar strange and the strange familiar, manipulating perceptions and normalizing the extraordinary." - George Orwell
+                </blockquote>
+
+                <p>
+                    The escalating use of digital media stresses a societal shift towards external validation, accentuating the prevalent issue of loneliness. This shift fosters a desire to be noticed, prompting individuals to seek fame through the utilization of mass media. Unawareness or disregard of its impacts this desire for recognition, driven by a sense of alienation, has far-reaching implications for both contestants and viewers. The yearning for validation can occasionally obscure one's authenticity or drive them to pursue approval through superficial methods. Consequently, pursuing fame, often as a remedy for loneliness, risks compromising the identity.
+				</p>
+
+                <p>
+                    The game ends when one of the teams loses. Who will lose the game here? The audience, the contestants, or the producers? Or do we even have a winner in this scenario?
+				</p>
+
+			</div>
+		
+			<div class="column" id="column-5">
+				<h2 id="Conclusion"><a href="#info-page">The End</a></h2>
+
+
+				<p>
+					Cameras (in any form).
+				</p>
+
+				<p>
+					Controlling the society.
+				</p>
+
+				<p>
+					Capturing us.
+				</p>
+
+				<p>
+					The society follows the imposed perception.
+				</p>
+
+				<p>
+					The impact of media is alive.
+				</p>
+
+				<p>
+					Alive and live.
+				</p>
+
+				<p>
+					The continued existence
+				</p>
+
+				<p>
+					of the male gaze.
+				</p>
+
+				<p>
+					The presence of the commodification of the female body.
+				</p>
+
+				<p>
+					The existence of the manipulated frames.
+				</p>
+
+				<p>
+					The presence of the filters.
+				</p>
+
+				<p>
+					The presence of false realities.
+				</p>
+
+				<p>
+					The presence of the illusions.
+				</p>
+
+				<p>
+					Determining our lives.
+				</p>
+
+				<p>
+					Our lives are directed by the media.
+				</p>
+				<p>
+					The media form the standards.
+				</p>
+				<p>
+					The standards shape the reality.
+				</p>
+				<p>
+					The reality blurs the line between
+				</p>
+				<p>
+					The real
+				</p>
+
+				<p>
+				and
+		 	   </p>
+	
+				<p>
+					The unreal
+				</p>
+				<p>
+					The unreal becomes the new real.
+				</p>
+				<p>
+					The new real grows into a desire.
+				</p>
+
+				<p>
+				As a remedy for loneliness within the new reality;
+				</p>
+
+				<p>
+					The desire to be seen is born.
+				</p>
+
+				<p>
+					“to-be-looked-at-ness”.
+				</p>
+				
+			</div>
+				
+			<div class="column" id="column-6">
+				<h2 id="Footnotes"><a href="#info-page">Footnotes</a></h2>
+				<footer>
+					<p id="footnote1">1  Camera | English Meaning - Cambridge Dictionary, dictionary.cambridge.org/dictionary/english/camera.</p>
+					<p><a href="#introduction">&#8592;</a></p>
+					<p id="footnote2">2  Mirzoeff, Nicholas. “Chapter 1/How To See Yourself.” How to See the World: An Introduction to Images, from Self-Portraits to Selfies, Maps to Movies, and More, Basic Books, New York, 2016.</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote3">3  Mirzoeff, Nicholas. “Chapter 1/How To See Yourself.” How to See the World: An Introduction to Images, from Self-Portraits to Selfies, Maps to Movies, and More, Basic Books, New York, 2016.</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote4">4  Mirzoeff, Nicholas. “Chapter 1/How To See Yourself.” How to See the World: An Introduction to Images, from Self-Portraits to Selfies, Maps to Movies, and More, Basic Books, New York, 2016.</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote5">5  Dabiri, Emma. Disobedient Bodies: Reclaim Your Unruly Beauty. Welcome Collection, 2023.</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote6">6  Kearney, Amanda. “Uses and Gratification of Posting Selfies on Social Media.” Theses, May 2018, repository.rit.edu/theses/9717/. Accessed 26 Jan. 2024.</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote7">7  Kelly, Philippa, et al. "Kalpesh Lathigra’s Passport Photos Question Issues of Egalitarianism, Hierarchy and Privilege." 1854 Photography, 15 Feb. 2023, www.1854.photography/2023/02/kalpesh-lathigra-a-democratic-portrait/. Accessed 14 Jan. 2024.</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote8">8  Kelly, Philippa, et al. "Kalpesh Lathigra’s Passport Photos Question Issues of Egalitarianism, Hierarchy and Privilege." 1854 Photography, 15 Feb. 2023, www.1854.photography/2023/02/kalpesh-lathigra-a-democratic-portrait/. Accessed 14 Jan. 2024.</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote9">9  Dabiri, Emma. Disobedient Bodies: Reclaim Your Unruly Beauty. Welcome Collection, 2023.</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote10">10  Sluis, Katrina. "Artist Profile: Zach Blas." Rhizome, 1 Mar. 2017, rhizome.org/editorial/2017/mar/01/artist-profile-zach-blas/. Accessed 23 Jan. 2024.</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote11">11  Rajanala, S., Maymone, MBC., Vashi, NA. "Selfies—Living in the Era of Filtered Photographs." JAMA Facial Plastic Surgery, vol. 20, no.6, 2018, pp. 443–444.</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote12">12  Yang, Lucy. “People Are Seeking Plastic Surgery to Look like Their Edited Selfies in Real Life — Here’s Why Doctors Think the Trend Is ‘Alarming.’” Business Insider, www.businessinsider.com/plastic-surgery-selfie-filters-2018-8?international=true&r=US&IR=T.s. Accessed 05 Jan.2024</p>
+					<p><a href="#column-2">&#8592;</a></p>
+					<p id="footnote13">13  Hosie, Rachel. "People Want to Look like Versions of Themselves with Filters rather than Celebrities, Cosmetic Doctor Says." The Independent, 6 Feb. 2018, www.independent.co.uk/life-style/cosmetic-surgery-snapchat-instagram-filters-demand-celebrities-doctor-dr-esho-london-a8197001.html. Accessed 10 Jan. 2024.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote14">14  Shao, G. "Understanding the appeal of user-generated media: A uses and gratification perspective." Internet Research, vol. 19, 2009, pp. 7–25.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote15">15  McRobbie, A., and Garber, J. "Girls and subcultures." In: Hall, S., and Jefferson, T. (eds) Resistance through Rituals: Youth Subcultures in Post-War Britain (2nd ed). London: Routledge, pp.177–188, 2006.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote16">16  Mulvey, Laura. “Visual Pleasure and Narrative Cinema.”1975.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote17">17  Mulvey, Laura. “Visual Pleasure and Narrative Cinema.”1975, pp. 6-18.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote18">18  Mulvey, Laura. “Visual Pleasure and Narrative Cinema.”1975.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote19">19  Herbst, Moira. “The Wolf of Wall Street’s Male Gaze.” Al Jazeera America, 9 Feb. 2014.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote21">20  Personality and Social Psychology Review:
+						Bailey, April H, et al. “Is Man the Measure of All Things? A Social Cognitive Account of Androcentrism.”
+						an official journal of the Society for Personality and Social Psychology, Inc.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote21">21  Mulvey, Laura. “Visual Pleasure and Narrative Cinema.”1975.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote22">22  Lazar, Samantha. “Jordan Belfort’s Male Gaze and Its Effect on Filmgoers – the Prolongation of Work • F17.2.” Sites.williams.edu, 12 Dec. 2017, sites.williams.edu/f18-engl117-02/uncategorized/jordan-belforts-male-gaze-and-its-effect-on-filmgoers/.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote23">23  Mulvey, Laura. “Visual Pleasure and Narrative Cinema.”1975.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote24">24  Galperina, Marina. “Kate Cooper’s Hyperreal, ‘Hypercapitalist’ CGI Females.” ANIMAL, 24 Sept. 2014, animalnewyork.com/2014/09/24/kate-coopers- hyperreal-hypercapitalist-cgi-females/. Accessed 27 Feb. 2024.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote25">25  Ugelvig, Jeppe. “Kate Cooper: Hypercapitalism and The Digital Body.” DIS Magazine, https://dismagazine.com. Accessed 25 Jan. 2024.</p>
+					<p><a href="#column-3">&#8592;</a></p>
+					<p id="footnote26">26  Rosenstein, Jenna. “People Can’t Tell If This Fenty Model Is Real Or Fake.” Harper’s Bazaar, 9 Feb. 2018, https://www.harpersbazaar.com. Accessed 16 Jan. 2024.</p>
+					<p><a href="#column-4">&#8592;</a></p>
+					<p id="footnote27">27  Pearlman, Joe, director. Robbie Williams. Netflix, 8 Nov. 2023, www.netflix.com.</p>
+					<p><a href="#column-4">&#8592;</a></p>
+					<p id="footnote28">28  Rose, Phyllis. Parallel Lives: 5 Victorian Marriages. Knopf, 1984.</p>
+					<p><a href="#column-4">&#8592;</a></p>
+					<p id="footnote29">29  Wilson, Marc. “Why Do People Go on Reality Television Shows? |Wellington Faculty of Science.” Victoria University of Wellington, www.wgtn.ac.nz/science/ask-a-researcher/why-do-people-go-on-reality-television-shows. Accessed 20 Dec. 2024.</p>
+					<p><a href="#column-4">&#8592;</a></p>
+					<p id="footnote30">30  Marsh, Calum. “The Long, Long Reign of “Big Brother.”” The New York Times, 8 Aug. 2023 www.nytimes.com/2023/08/08/arts/television/big- brother-season-25.html. Accessed 25 Jan. 2024.</p>
+					<p><a href="#column-4">&#8592;</a></p>
+					<p id="footnote31">31  Mirror.co.uk. “Big Brother 1’S Melanie Hill Now – Reality Origins to Equal Rights Campaigner.” The Mirror, 16 Dec. 2021, www.mirror.co.uk/3am/celebrity-news/big-brother-1s-melanie-hill-25714968. Accessed 28 Jan. 2024.</p>
+					<p><a href="#column-4">&#8592;</a></p>
+					<p id="footnote32">32  DeVault, Ryan. “Paloma Aguilar Now Blames Her Big Brother Gameplay on False ‘Narrative’ and ‘Cancel Culture.’” Monsters and Critics, 27 July 2022, www.monstersandcritics.com/tv/reality-tv/paloma-aguilar-now-blames-her-big-brother-gameplay-on-false-narrative-and-cancel-culture/.</p>
+					<p><a href="#column-4">&#8592;</a></p>
+		
+				  </footer>
+				
+			</div>
+			
+			<div class="column" id="column-7">
+				<h2 id="Bibliography"><a href="#info-page">Bibliography</a></h2>
+	<p>Camera | English Meaning - Cambridge Dictionary, dictionary.cambridge.org/dictionary/english/camera.</p>
+	<p>Bailey, April H, et al. “Is Man the Measure of All Things? A Social Cognitive Account of Androcentrism.” Personality and Social Psychology Review: an official journal of the Society for Personality and Social Psychology, Inc. vol. 23,4 (2019): 307-331. doi:10.1177/1088868318782848</p>
+	<p>Dabiri, Emma. Disobedient Bodies: Reclaim Your Unruly Beauty. Welcome Collection, 2023.</p>
+	<p>DeVault, Ryan. "Paloma Aguilar Now Blames Her Big Brother Gameplay on False 'Narrative' and 'Cancel Culture'." Monsters and Critics, 27 July 2022, www.monstersandcritics.com/tv/reality-tv/paloma-aguilar-now-blames-her-big-brother- gameplay-on-false-narrative-and-cancel-culture/.</p>
+	<p>Feminist Equal Rights Alliance (FERA). "The Male Gaze: How TikTok Is Generating Discussion on This Age-Old Phenomenon." Medium, Medium, 28 Feb. 2021, ferauoft.medium.com/the-male-gaze-how-tiktok-is-generating-discussion-on-this-age- old-phenomenon-e56c95d75aad.</p>
+	<p>Galperina, Marina. "Kate Cooper’ s Hyperreal, ‘Hypercapitalist’ CGI Females." ANIMAL, 24 Sept. 2014, animalnewyork.com/2014/09/24/kate-coopers-hyperreal-hypercapitalist-cgi-females/. Accessed 27 Feb. 2024</p>
+	<p>Gilbride, Tricia. "Kim Kardashian Took the Optimal 6,000 Selfies on Her Mexico Vacation." Mashable, Mashable, 29 Oct. 2021, mashable.com/article/kim-kardashian-6000-selfies.</p>
+	<p>Herbst, Moira. "The Wolf of Wall Street’s Male Gaze." Al Jazeera America, 9 Feb. 2014.</p>
+	<p>Hosie, Rachel. "People Want to Look like Versions of Themselves with Filters rather than Celebrities, Cosmetic Doctor Says." The Independent, 6 Feb. 2018, www.independent.co.uk/life-style/cosmetic-surgery-snapchat-instagram-filters-demand- celebrities-doctor-dr-esho-london-a8197001.html. Accessed 10. Jan 2024.</p>
+	<p>Kearney, Amanda. "Uses and Gratification of Posting Selfies on Social Media." Theses, May 2018, repository.rit.edu/theses/9717/. Accessed 26 Jan. 2024.</p>
+	<p>Kelly, Philippa, et al. "Kalpesh Lathigra’ s Passport Photos Question Issues of Egalitarianism, Hierarchy and Privilege." 1854 Photography, 15 Feb. 2023, www.1854.photography/2023/02/kalpesh-lathigra-a-democratic-portrait/. Accessed 14 Jan. 2024.</p>
+	<p>Lazar, Samantha. "Jordan Belfort’s Male Gaze and Its Effect on Filmgoers – the Prolongation of Work • F17.2." Sites.williams.edu, 12 Dec. 2017, sites.williams.edu/f18-engl117-02/uncategorized/jordan-belforts-male-gaze-and-its- effect-on-filmgoers/.</p>
+	<p>Marain, Alexandre. "From Lil Miquela to Shudu Gram: Meet the Virtual Models." Vogue France, 5 Apr. 2019, https://www.vogue.fr/. Accessed 16 Jan. 2024.</p>
+	<p>Marsh, Calum. "The Long, Long Reign of 'Big Brother'." The New York Times, 8 Aug. 2023, www.nytimes.com/2023/08/08/arts/television/big-brother-season-25.html. Accessed 25 Jan. 2024.</p>
+	<p>McRobbie, A., and Garber, J. "Girls and subcultures." In: Hall, S., and Jefferson, T. (eds) Resistance through Rituals: Youth Subcultures in Post-War Britain (2nd ed). London: Routledge, pp.177–188, 2006.</p>
+	<p>Mcquin, Kaitlyn. "These TikTok Trends Are Adding Shame to Women’s Pleasure." Restless Network, 10 Feb. 2021, https://restlessnetwork.com/.</p>
+	<p>Mirror.co.uk. "Big Brother 1’S Melanie Hill Now – Reality Origins to Equal Rights Campaigner." The Mirror, 16 Dec. 2021, www.mirror.co.uk/3am/celebrity-news/big-brother-1s-melanie-hill-25714968. Accessed 28 Jan. 2024.</p>
+	<p>Mirzoeff, Nicholas. "Chapter 1/How To See Yourself." How to See the World: An Introduction to Images, from Self-Portraits to Selfies, Maps to Movies, and More, Basic Books, New York, 2016.</p>
+	<p>Mulvey, Laura. "Visual Pleasure and Narrative Cinema." 1975.</p>
+	<p>Pearlman, Joe, director. Robbie Williams. Netflix, 8 Nov. 2023, www.netflix.com.</p>
+	<p>Rajanala, S., Maymone, MBC., Vashi, NA. "Selfies—Living in the Era of Filtered Photographs." JAMA Facial Plastic Surgery, vol. 20, no. 6, 2018, pp. 443–444.</p>
+	<p>Rose, Phyllis. Parallel Lives: 5 Victorian Marriages. Knopf, 1984.</p>
+	<p>Rosenstein, Jenna. "People Can’t Tell If This Fenty Model Is Real Or Fake." Harper’s Bazaar, 9 Feb. 2018, https://www.harpersbazaar.com/. Accessed 16 Jan 2024.</p>
+	<p>Shao, G. "Understanding the appeal of user-generated media: A uses and gratification perspective." Internet Research, vol. 19, 2009, pp. 7–25.</p>
+	<p>Sluis, Katrina. "Artist Profile: Zach Blas." Rhizome, 1 Mar. 2017, rhizome.org/editorial/2017/mar/01/artist-profile-zach-blas/. Accessed 23 Jan. 2024.
+	<p>Ugelvig, Jeppe. "Kate Cooper: Hypercapitalism and The Digital Body." DIS Magazine, https://dismagazine.com/. Accessed 25 Jan. 2024.</p>
+	<p>Van Dijck, José. "You have one identity: Performing the self on Facebook and LinkedIn." Media, Culture & Society, vol. 35, 2013, pp. 199–215.</p>
+	<p>Wilson, Marc. "Why Do People Go on Reality Television Shows?" Wellington Faculty of Science, Victoria University of Wellington, www.wgtn.ac.nz/science/ask-a-researcher/why-do-people-go-on-reality-television-shows. Accessed 20 Dec. 2024.</p>
+	<p>Yang, Lucy. "People Are Seeking Plastic Surgery to Look like Their Edited Selfies in Real Life — Here’s Why Doctors Think the Trend Is 'Alarming'." Business Insider, www.businessinsider.com/plastic-surgery-selfie-filters-2018- 8?international=true&r=US&IR=T. Accessed 5 Jan. 2024.</p>
+
+	<h2 id="Images"><a href="#info-page">Figure Sources</a></h2>
+	         <p>Blas, Zach. “Face Cages.” Zach Blas, image, 2014, zachblas.info/works/face-cages/. Accessed 10 Feb. 2024.</p>
+			 <p>Camper, Pieter. “The Works on the Connexion,” Wellcome Images, 8 Sept. 2014, wellcomecollection.org/works/h3avv6j5?wellcomeImagesUrl=/indexplus/image/L0018736.html. Accessed 26 Dec. 2024.</p>
+			 <p>Cooper, Kate. “Rigged.” Artsy, image, 2014, www.artsy.net/artwork/kate-cooper-rigged. Accessed 16 Jan. 2024.</p>
+			 <p>Gramn, Shudu. “🍊🍊🍊.” Instagram, image, 4 Feb. 2018, www.instagram.com/p/Be0ldl7F-Pu/. Accessed 22 Feb. 2024/<p>
+			 <p>Kardashian, Kim. Selfish. Rizzoli, 2016</p>
+			 <p>NASA. “Akihiko Hoshide,” Wikimedia, 14 Sept. 2012, spaceflight.nasa.gov/gallery/images/station/crew32/html/iss032e025258.html. Accessed 22 Feb. 2024.</p>
+			 <p>Scorsese, Martin. “The Wolf of Wall Street.” Paramount Pictures, image, 6 Apr. 2019, www.paramountpictures.com. Accessed 25 Jan. 2024.</p>
+			 <p>Sousa, Miquela. “You Don’t Wanna Know How Robots Digest Kale   .” Instagram, image, 10 Sept. 2020, www.instagram.com/p/CiVxBRUP3g1/?img_index=1. Accessed 22 Feb. 2024.</p>
+			</div>
+
+				<div id="camera-container">
+					<video id="camera-preview" autoplay></video>
+				
+			</div>
+		
+
+
+				<figure>
+
+					<a href="content/painting-forest-lake.jpg" target="_blank">
+				    	<img src="content/painting-forest-lake.jpg" alt="A painted representation of a forest with a big blue lake" width="100%" height="auto">
+				    </a>
+
+				    <figcaption>
+
+				    	<p>
+				    		<em><a href="https://www.youtube.com/watch?v=bkKTSw4pL2A" target="_blank">Painting of a forest with a blue lake</a>, by Anonymous</em>
+				    	</p>
+
+				    </figcaption>
+
+				</figure> -->
+
+			
+			
+			</div>
+
+			</main>
+
+		</div>
+
+			<footer>
+
+				<hr>
+
+
+			</footer>
+
+
+
+		</div>
+
+
+
+		<!-- end webpage content -->
+
+
+
+	</body>
+
 </html>

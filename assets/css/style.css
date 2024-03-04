@@ -1,0 +1,740 @@
+@charset "UTF-8";
+
+
+
+/* @FONT FACE (enable the use of 'custom fonts' inside your document) */
+
+/* 
+  You can use 'fontsquirrel' (https://www.fontsquirrel.com) 
+  or 'transfonter' (https://transfonter.org)
+  to generate your own font for the web from .ttf or .oft files 
+*/
+
+
+
+@font-face {
+  font-family: 'Gambarino';
+  src: url('../fonts/gambarino/gambarino-regular.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('../fonts/switzer/switzer-regular.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+
+
+
+
+/* VARIABLES */
+
+:root {
+  /* Color values */
+  --color-background: rgba(255,255,255,1);
+  --color-text: rgba(0,0,0,1);
+  --color-text-link: rgba(0, 0, 0, 0.);
+  --color-text-link-hover: rgba(0, 0, 0, 0.);
+  /* Font values */
+  /* Margin value */
+  /* --margin: 14rem;
+  --margin-top: 2rem; */
+  margin-block-start: 5m;
+margin-block-end: 5em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+  
+
+
+}
+
+
+
+/* GENERAL STYLES */
+
+html {
+  font: var(--font-size) var(--font-family);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+body {
+  position: absolute;
+  /* background-color: var(--color-background); */
+  font: var(--font-size) var(--font-family);
+  color: var(--color-text);
+  width:100%;
+  height:auto;
+  overflow-y:auto;
+  align-items: flex-start;
+}
+.page-wrapper {
+  width: 100%;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#camera-container {
+  position: absolute;
+  filter: blur(20px);
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+  /* width: 320px; /* Adjust the width as needed */
+  /* height: 240px; Adjust the height as needed */ 
+  z-index: -1;
+  /* mix-blend-mode: lighten; */
+  /* opacity: 0.5; */
+  
+}
+
+#camera-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.columns-container {
+  display: flex;
+  overflow: scroll; /* Enable horizontal scrolling */
+  scroll-snap-type: both mandatory; /* Snap horizontally */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  height: 100vh; /* Set a fixed height for the container */
+
+}
+
+
+
+.column {
+  width: 100%; /* Full viewport width for each column */
+  flex-shrink: 0; /* Prevent columns from shrinking */
+  box-sizing: border-box;
+  overflow: auto; /* Enable vertical scrolling */
+  max-height: 100%; /* Set a maximum height for each column */
+  scroll-snap-align: start; /* Snap to the start of each column */
+  scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+  float: left;
+}
+
+#landing-page{
+ 
+  scroll-snap-align: start;
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+  
+  }
+
+  h1{
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 8px rgb(240, 240, 240), 0 0 8px rgb(240, 240, 240);
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    mix-blend-mode: normal;
+    font-family: 'Gambarino';
+    font-size: clamp(6.25rem, 20vw, 20rem); /* Adjust the min, max, and preferred font size as needed */
+    font-weight: 800;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -0.01em;
+    line-height: 1em;
+    word-spacing: 1px;
+    display: flex;
+    filter: blur(25px);
+    transition: filter 0.8s ease-in-out;
+ 
+  }
+  
+ 
+
+  h1:hover {
+    filter: blur(0); /* Remove blur on hover */
+  }
+  
+ #bachelor-thesis{
+ font-family: 'Times New Roman', Times, serif;
+ font-style: italic;
+ font-size: clamp(1.25rem, 3vw, 1.75rem); 
+ text-align: center;
+ margin-top: clamp(5%, 20vh, 12%); 
+ 
+}
+
+
+
+#info-page{
+ 
+  scroll-snap-align: always;
+  scroll-snap-stop: always; 
+  
+  }
+
+#abstract {
+    scroll-snap-align: always;
+    scroll-snap-stop: always;   
+
+  }
+
+
+#abstract p {
+  margin: 20px auto;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  text-align: center;
+  width: 60%; 
+  text-indent: 10px;
+  font-size: clamp(1.625rem, 4vw, 1.938rem);
+  letter-spacing: -0.001em; /* Adjust kerning */
+  line-height: 1.1em; /* Adjust line height for better readability */
+  font-family: 'Helvetica', sans-serif; /* Added generic sans-serif fallback */
+  text-shadow: 0 0 3px rgb(240, 240, 240), 0 0 3px rgb(240, 240, 240);
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: rgb(231, 230, 230);
+  mix-blend-mode: normal;
+  filter: blur(30px);
+  transition: filter 0.5s ease-in-out;
+ 
+}
+
+
+#abstract p:hover {
+  filter: blur(0); /* Remove blur on hover */
+}
+  
+#introduction {
+  scroll-snap-stop: always;
+}
+ 
+#column-2  { 
+  scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+  }
+
+ #column-3  {
+  scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+} 
+
+#column-4  {
+  scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+
+} 
+#column-5  {
+  scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+} 
+
+#column-6 {
+  scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+  width: 50%; /* Adjust the width as needed */
+  margin-left: 20px; /* Adjust the margin as needed */  
+
+} 
+
+#column-7  {
+  scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+  width: 50%; /* Adjust the width as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+} 
+
+#column-7 p  {
+  font-size: clamp(1rem, 3vw, 1.438rem);
+  margin-left: 20px;
+ } 
+
+#column-6 p  {
+font-size: clamp(1rem, 3vw, 1.438rem);
+ margin-left: 20px;
+} 
+
+#Footnotes {
+  text-align: center;
+}
+
+.print-only {
+  display: none; /* Hide this container on screen */
+}
+
+@media print {
+  .print-only {
+    display: block; /* Display this container for printing */
+  }
+}
+
+
+
+.blurred-text {
+  filter: blur(2px); /* Adjust the blur amount as needed */
+  transition: filter 0.3s ease-in-out; /* Smooth transition */
+  cursor: pointer; /* Show pointer cursor on hover */
+
+}
+
+
+
+.blurred-text:hover {
+  filter: none; /* Remove blur on hover */
+}
+
+
+img {
+  width: 25.5rem;
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: lighten;
+}
+
+.hidden-image {
+  display: none;
+}
+
+
+
+a {
+  
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-text-link-hover);
+  text-decoration: none;
+}
+
+
+
+h2{
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 8px rgb(240, 240, 240), 0 0 8px rgb(240, 240, 240);
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  mix-blend-mode: normal;
+  font-family: 'Gambarino';
+  font-size: clamp(2.7rem, 5vw, 3.5rem);
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: clamp(-0.02em, -0.5vw, 0.02em);
+  line-height: 1em;
+  word-spacing: clamp(1px, 0.5vw, 2px);
+  margin-top: 5px; 
+  margin-right: 10px; 
+
+}
+
+
+
+
+#info-page{
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 3px rgb(240, 240, 240), 0 0 3px rgb(240, 240, 240);
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: rgb(240, 240, 240);
+  mix-blend-mode: normal;
+  text-decoration: none;
+  font-family: 'Gambarino';
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-weight: 800;
+  text-align: right;
+  letter-spacing: -0.02em;
+  line-height: 1em;
+  word-spacing: 1px;
+  filter: blur(30px);
+  transition: filter 0.s ease-in-out;
+  padding-right: 20px;
+   margin-top: -40px;
+
+  }
+
+
+  #info-page:hover {
+    filter: blur(0); /* Remove blur on hover */
+  }
+
+  ul {
+    list-style-type: none; /* Remove default list markers */
+    padding-left: 0; /* Remove default left padding */
+}
+ul li::before {
+    content: ""; /* Empty content */
+}
+
+p{
+  align-items: center;
+  font-family: 'Helvetica';
+  font-weight: 700;
+  font-size: clamp(1.25rem, 3vw, 11.75rem);
+  letter-spacing: clamp(-0.02em, -0.5vw, 0.02em);
+  word-spacing: clamp(-0.062rem, -0.5vw, 0.063rem);
+  line-height: 1em;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: rgb(240, 240, 240);
+   filter: brightness(0.9); 
+ 
+  
+}
+
+#introduction p {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  width: 55%; 
+  text-align: center;
+  text-indent: clamp(0.625rem, 1vw, 1.25rem);
+  font-size: clamp(1.25rem, 3vw, 1.875rem);
+  line-height: clamp(1.6rem, 2vw, 2.5rem);
+  hyphens: auto;
+  margin: clamp(0.625rem, 2vw, 1.25rem) auto;
+  filter: blur(30px);
+  transition: filter 0.5s ease-in-out;
+}
+
+
+ #introduction p:hover {
+  filter: blur(0); /* Remove blur on hover */
+}
+
+.key-words p {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  filter: blur(7px);
+  transition: filter 0.5s ease-in-out;
+  font-size: clamp(1.25rem, 3vw, 2.188rem) !important;
+}
+
+
+.key-words p:hover {
+  filter: blur(0); /* Remove blur on hover */
+}
+
+
+
+#column-2 p {
+  margin: clamp(0.625rem, 5vw, 1.25rem) auto; 
+  text-indent: 20px; 
+  word-spacing: clamp(0rem, 1vw, 0.125rem); 
+  font-size: clamp(1.25rem, 3vw, 1.75rem); 
+  vertical-align: middle; 
+  letter-spacing: clamp(-0.02em, -0.5vw, 0.02em); 
+  line-height: clamp(1em, 2vw, 1.2em); 
+  width: 70%;
+}
+
+
+#column-3 p {
+
+  margin: clamp(0.625rem, 5vw, 1.25rem) auto; 
+  text-indent: 20px; 
+  word-spacing: clamp(0rem, 1vw, 0.125rem); 
+  font-size: clamp(1.25rem, 3vw, 1.75rem); 
+  vertical-align: middle; 
+  letter-spacing: clamp(-0.02em, -0.5vw, 0.02em); 
+  line-height: clamp(1em, 2vw, 1.2em); 
+  width: 70%;
+
+}
+
+#column-4 p {
+  margin: clamp(0.625rem, 5vw, 1.25rem) auto; 
+  text-indent: 20px; 
+  word-spacing: clamp(0rem, 1vw, 0.125rem); 
+  font-size: clamp(1.25rem, 3vw, 1.75rem); 
+  vertical-align: middle; 
+  letter-spacing: clamp(-0.02em, -0.5vw, 0.02em); 
+  line-height: clamp(1em, 2vw, 1.2em); 
+  width: 70%;
+
+}
+
+#column-5 p {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+  text-indent: 20px;
+  font-size: clamp(1.25rem, 4vw, 1.875rem); /* Adjust min, preferred, and max font sizes */
+  line-height: 2.2rem;
+  hyphens: auto;
+  margin: 20px auto;
+  filter: blur(15px);
+  transition: filter 0.8s ease-in-out;
+}
+
+#column-5 p:hover {
+  filter: blur(0); /* Remove blur on hover */
+}
+
+
+
+blockquote {
+  font-size: clamp(15px, 4vw, 25px);
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: rgb(240, 240, 240);
+  filter: brightness(0.9);
+  text-align: center;
+  max-width: clamp(40rem, 55rem, 100%);
+  margin: 0 auto; /* Centering */
+}
+
+
+
+hr{
+  text-align: right;
+  /* horizontal rule style */
+}
+
+
+
+.caption {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Switzer';
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: rgb(240, 240, 240);
+
+  
+}
+
+/* PAGE STYLES */
+
+/* page structure */
+
+div.page-wrapper {
+  /* the element that 'wraps' everything */
+  padding: var(--margin);
+}
+
+/* navigation */
+ 
+/* nav{
+  
+} */
+
+/* content */
+
+/* main{
+ 
+} */
+
+/* summary{
+  
+} */
+
+
+
+
+
+
+/* UTILITY CLASSES */
+
+/* hide desktop mobile etc */
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+
+@media only screen and (max-width: 414px) { /* iPhone 12 Pro Max width */
+  /* Adjustments for smaller screen widths */
+
+  
+  /* Specific adjustments for elements */
+  /* h2 {
+    font-size: 40px; /* Decrease heading size */
+    /* margin-right: 5px; /* Adjust margins */
+  /* } */  
+
+  #info-page{
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 3px rgb(240, 240, 240), 0 0 3px rgb(240, 240, 240);
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: rgb(240, 240, 240);
+    mix-blend-mode: normal;
+    text-decoration: none;
+    font-family: 'Gambarino';
+    font-size: 35px;
+    font-weight: 800;
+    text-align: right;
+    letter-spacing: -0.02em;
+    line-height: 1em;
+    word-spacing: 1px;
+    filter: blur(30px);
+    transition: filter 0.5s ease-in-out;
+    padding-right: 20px;
+    margin-top: -35px;
+
+  
+    }
+  #column-2 p {
+
+    margin: 20px auto; /* Center the paragraph horizontally */
+    text-indent: 20px;
+    word-spacing: 1px;
+    font-size: 14px;
+    vertical-align: middle;
+    letter-spacing: -0.02em;
+     line-height: 1.1em;
+     width: 350px;
+  
+   
+  }
+
+  #introduction p {
+    text-indent: 20px;
+    font-size: 14px;
+    hyphens: auto;
+    margin: 20px auto;
+    width: 55%;
+    filter: blur(30px);
+    transition: filter 0.5s ease-in-out;
+    /* text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(240, 255, 255, );
+    -webkit-text-stroke-width: 0.6px; 
+   -webkit-text-stroke-color: rgb(255, 255, 255);  */
+    
+   }
+ 
+   img {
+    width: 15rem;
+    display: block;
+    margin: 0 auto;
+    mix-blend-mode: lighten;
+  }
+ 
+  #column-3 p {
+
+    margin: 20px auto; /* Center the paragraph horizontally */
+    text-indent: 20px;
+    word-spacing: 1px;
+    font-size: 14px;
+    vertical-align: middle;
+    letter-spacing: -0.02em;
+     line-height: 1.1em;
+     width: 70%;
+  
+  }
+  
+  #column-4 p {
+  
+    margin: 20px auto; /* Center the paragraph horizontally */
+    text-indent: 20px;
+    word-spacing: 1px;
+    font-size:14px;
+    vertical-align: middle;
+    letter-spacing: -0.02em;
+    line-height: 1em;
+     width: 70%;
+  
+  }
+  
+  #column-6 {
+    scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+    width: 50%; /* Adjust the width as needed */
+    margin-left: 20px; /* Adjust the margin as needed */  
+  
+  } 
+  
+  #column-7  {
+    scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+    width: 50%; /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the margin as needed */
+  
+  } 
+  
+   
+  #column-6 p  {
+   font-size: 15px;
+   margin-left: 10px;
+  } 
+  #column-7 p  {
+    font-size: 15px;
+    margin-left: 10px;
+   } 
+  #Footnotes {
+    text-align: center
+    
+  }
+  h2  #Footnotes{
+    font-size: 40px; /* Decrease heading size */
+    margin-right: 5px; /* Adjust margins */
+  }
+
+  /* Adjust other elements as necessary */
+}
+
+
+/* WEBSITE MEDIA QUERIES */
+
+/* styles for 'mobile', screen sizes up to 779px, should covers 'mobile' and 'tablet' */
+/* style this one first and then use the subsequent ones in a cascading way (from general to specific) */
+
+@media (max-width: 779px) {
+
+  /* your 'mobile' overriding css properties here */
+
+
+
+  /* utility classes, mobile */
+
+  .desktop-only{
+    display:none;
+  }
+
+  .mobile-only{
+    display:block;
+  }
+
+}
+
+
+
+/* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
+
+@media (max-width: 339px) {
+
+  /* your overriding css properties here */
+
+}
+
+
+
+/* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
+
+@media (max-width: 779px) and (orientation: landscape) {
+
+
+
+   /* your overriding css properties here */
+
+}
+
+
+
+/* use this query to apply style for 'small' desktop screens */
+
+@media (min-width: 780px) and (max-width: 992px) {
+
+  /* your overriding css properties here */
+
+}
+
+
