@@ -16,7 +16,8 @@ navigator.mediaDevices.getUserMedia({ video: true })
     .catch(function (error) {
         console.error('Error accessing the camera:', error);
     });
-    
+    navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+
     document.getElementById('aki-hoshide').addEventListener('click', function() {
         var img = document.getElementById('aki-hoshide-img');
         var caption = document.getElementById('caption');
