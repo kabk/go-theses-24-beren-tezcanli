@@ -158,6 +158,12 @@ if (isDesktop()) {
     
  
     });
-
-  
+    function scrollRight() {
+        const container = document.querySelector('.columns-container');
+        container.scrollBy({
+          left: window.innerWidth, // Scroll one viewport width to the right
+          behavior: 'smooth' // Smooth scrolling animation
+        });
+      }
+    
 

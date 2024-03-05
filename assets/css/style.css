@@ -74,8 +74,25 @@ body {
   height:auto;
   overflow-y:auto;
   align-items: flex-start;
-
+  cursor: default;
 }
+
+
+/* Optional: Add animation for the arrow */
+.arrow-right:hover {
+  animation: arrowBounce 0.5s infinite alternate;
+}
+
+@keyframes arrowBounce {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+
+
 
 .page-wrapper {
   width: 100%;
@@ -136,6 +153,32 @@ body {
   
   }
 
+  .navigation {
+    position: absolute; /* Position the navigation absolutely */
+    bottom: 15px; /* Adjust this value to control the distance from the bottom */
+    right: 10px; /* Adjust this value to control the distance from the right */
+  }
+  
+
+.navigation button {
+  background-color: transparent; /* Set background color to transparent */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.navigation svg {
+  width: 50px; /* Adjust width */
+  height: 50px; /* Adjust height */
+  filter: blur(2px);
+  fill: rgba(255, 255, 255, 0.9);
+  
+ 
+}
+
+
+  
+  
   h1{
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 0 8px rgb(240, 240, 240), 0 0 8px rgb(240, 240, 240);
@@ -542,7 +585,7 @@ div.page-wrapper {
     background-color: black; /* Set background color to black */
   }
 
-
+ 
   h1{
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 0 5px rgb(240, 240, 240), 0 0 5px rgb(240, 240, 240);
@@ -693,37 +736,51 @@ div.page-wrapper {
   
   }
   
-  #column-6 {
-    scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
-    width: 50%; /* Adjust the width as needed */
-    margin-left: 20px; /* Adjust the margin as needed */  
-  
-  } 
-  
-  #column-7  {
-    scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
-    width: 50%; /* Adjust the width as needed */
-    margin-right: 20px; /* Adjust the margin as needed */
-  
-  } 
-  
-   
-  #column-6 p  {
-   font-size: 15px;
-   margin-left: 10px;
-  } 
-  #column-7 p  {
-    font-size: 15px;
-    margin-left: 10px;
-   } 
+ 
+#column-6 {
+  scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+  width: 50%; /* Adjust the width as needed */
+  margin-left: 20px; /* Adjust the margin as needed */  
+
+} 
+
+#column-7  {
+  scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+  width: 50%; /* Adjust the width as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+} 
+
+#column-7 p  {
+  font-size: clamp(1rem, 1vw, 1.438rem);
+  margin-right: 20px;
+  word-wrap: break-word;
+
+ } 
+
+#column-6 p  {
+font-size: clamp(1rem, 3vw, 1.438rem);
+ margin-left: 20px;
+ word-wrap: break-word;
+
+} 
+
   #Footnotes {
-    text-align: center
+  text-align: center;
+  font-size: 28px;
+
     
   }
-  h2  #Footnotes{
-    font-size: 40px; /* Decrease heading size */
-    margin-right: 5px; /* Adjust margins */
-  }
+
+  #Bibliography {
+    font-size: 30px; /* Change this to your desired font size for mobile */
+    text-align: center;
+}
+
+#Images {
+  font-size: 30px; /* Change this to your desired font size for mobile */
+  text-align: center;
+}
+
 
   /* Adjust other elements as necessary */
 }
