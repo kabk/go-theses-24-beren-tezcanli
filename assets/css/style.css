@@ -584,17 +584,15 @@ div.page-wrapper {
     background-color: black; /* Set background color to black */
   }
 
-  
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed; /* Use fixed positioning to keep the video in the background */
+    top: 0;
+    left: 0;
  
-    video {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      
-    }
+  }
  
   h1{
     color: rgba(255, 255, 255, 0.9);
@@ -814,6 +812,7 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: rgb(240, 240, 240);
+  position: relative;
 
 }
 
@@ -824,7 +823,7 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   font-style: italic;
   text-align: center;
   font-size: clamp(1rem, 1vw, 1.438rem);
-  margin-right: 20px;
+  margin-left: 20px;
   word-wrap: break-word;
 }
 
