@@ -158,12 +158,20 @@ if (isDesktop()) {
     
  
     });
-    function scrollRight() {
-        const container = document.querySelector('.columns-container');
-        container.scrollBy({
-          left: window.innerWidth, // Scroll one viewport width to the right
-          behavior: 'smooth' // Smooth scrolling animation
-        });
-      }
-    
+    window.onload = function() {
+        const video = document.querySelector('.video');
+        const promise = video.play();
+
+        if (promise !== undefined) {
+          promise.then(_ => {
+            // Autoplay started successfully
+            video.loop = true; // loop
+            video.muted = true; // mute
+          }).catch(error => {
+            // Autoplay was prevented
+            // Handle the situation here, e.g., by showing a play button
+            console.error('Autoplay was prevented:', error);
+          });
+        }
+      };
 

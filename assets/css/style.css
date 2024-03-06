@@ -823,7 +823,7 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   font-style: italic;
   text-align: center;
   font-size: clamp(1rem, 1vw, 1.438rem);
-  margin-left: 20px;
+  margin-right: 20px;
   word-wrap: break-word;
 }
 
