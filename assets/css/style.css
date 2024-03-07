@@ -683,14 +683,14 @@ div.page-wrapper {
     mix-blend-mode: normal;
     text-decoration: none;
     font-family: 'Gambarino';
-    font-size: clamp(2rem, 4vw, 4.5rem);
+    font-size: 2rem;
     font-weight: 800;
     text-align: right;
     letter-spacing: -0.02em;
     line-height: 1em;
     word-spacing: 1px;
     padding-right: 20px;
-    margin-top: -40px;
+    margin-top: -35px;
     filter: none; /* Remove blur */
     transition: none; /* Remove transition */
   }
