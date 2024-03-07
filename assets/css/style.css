@@ -769,15 +769,13 @@ div.page-wrapper {
     width: 15rem;
     display: block;
     margin: 0 auto;
-  fill-opacity: 60%;
+    position: relative;
+    filter: opacity(50%);
+  mix-blend-mode: normal;
   }
 
-  @supports (-webkit-appearance:none) {
-    /* CSS for browsers that support mix-blend-mode */
-    img {
-      mix-blend-mode: lighten;
-    }
-  }
+
+  
   
  
  
