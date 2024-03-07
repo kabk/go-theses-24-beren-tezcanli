@@ -581,7 +581,7 @@ div.page-wrapper {
 
 @media only screen and (max-width: 414px) {
   body {
-    background-color: black; /* Set background color to black */
+    height: 100vh;
   }
 
   video {
@@ -591,6 +591,7 @@ div.page-wrapper {
     position: fixed; /* Use fixed positioning to keep the video in the background */
     top: 0;
     left: 0;
+    z-index: -1;
  
   }
  
@@ -613,6 +614,7 @@ div.page-wrapper {
     filter: blur(20px);
     transition: filter 0.8s ease-in-out;
     position: relative; /* Ensure the stacking context */
+    z-index: 1;
  
   }
 
@@ -656,6 +658,10 @@ div.page-wrapper {
   padding-right: 20px;
    margin-top: -40px;
 
+  }
+  
+  #info-page:hover {
+    filter: blur(0); /* Remove blur on hover */
   }
 
   #abstract p {
@@ -725,6 +731,15 @@ div.page-wrapper {
     margin: 0 auto;
     mix-blend-mode: lighten;
   }
+
+  @supports (-webkit-appearance:none) {
+    /* CSS for browsers that support mix-blend-mode */
+    img {
+      mix-blend-mode: lighten;
+    }
+  }
+  
+ 
  
   #column-3 p {
 
