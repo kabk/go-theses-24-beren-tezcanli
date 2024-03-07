@@ -683,7 +683,7 @@ div.page-wrapper {
     mix-blend-mode: normal;
     text-decoration: none;
     font-family: 'Gambarino';
-    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    font-size: clamp(2rem, 4vw, 4.5rem);
     font-weight: 800;
     text-align: right;
     letter-spacing: -0.02em;
