@@ -769,7 +769,7 @@ div.page-wrapper {
     width: 15rem;
     display: block;
     margin: 0 auto;
-    mix-blend-mode: overlay;
+  fill-opacity: 60%;
   }
 
   @supports (-webkit-appearance:none) {
