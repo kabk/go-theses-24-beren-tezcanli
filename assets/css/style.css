@@ -591,7 +591,8 @@ div.page-wrapper {
     position: fixed; /* Use fixed positioning to keep the video in the background */
     top: 0;
     left: 0;
-    z-index: -1;
+    display: block;
+    
  
   }
  
@@ -637,9 +638,7 @@ div.page-wrapper {
   
   }
   
-  #video {
-    display: block; /* Display the video on mobile devices */
-  }
+
 
   #info-page {
     color: rgba(255, 255, 255, 0.5);
@@ -684,6 +683,7 @@ div.page-wrapper {
     mix-blend-mode: normal;
     filter: blur(10px);
     transition: filter 0.5s ease-in-out;
+    overflow-y: auto;
    
   }
 
@@ -698,6 +698,7 @@ div.page-wrapper {
     text-shadow: 0 0 1.5px rgb(240, 240, 240), 0 0 1.5px rgb(240, 240, 240);
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: rgb(231, 230, 230);
+    overflow-y: auto;
     
    }
 
@@ -724,6 +725,7 @@ div.page-wrapper {
     letter-spacing: -0.02em;
      line-height: 1.1em;
      width: 320px;
+     overflow-y: auto;
   
    
   }
@@ -754,6 +756,7 @@ div.page-wrapper {
     letter-spacing: -0.02em;
      line-height: 1.1em;
      width: 320px;
+     overflow-y: auto;
   
   }
   
@@ -767,6 +770,7 @@ div.page-wrapper {
     letter-spacing: -0.02em;
     line-height: 1em;
     width: 320px;
+    overflow-y: auto;
   
   }
   
@@ -788,13 +792,14 @@ div.page-wrapper {
   font-size: clamp(1rem, 1vw, 1.438rem);
   margin-right: 20px;
   word-wrap: break-word;
-
+  overflow-y: auto;
  } 
 
 #column-6 p  {
 font-size: clamp(1rem, 3vw, 1.438rem);
  margin-left: 20px;
  word-wrap: break-word;
+ overflow-y: auto;
 
 } 
 
@@ -824,11 +829,11 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   margin: 0 auto;
   text-align: center;
   font-family: 'Switzer';
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
-  text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
-  -webkit-text-stroke-width: 0.2px;
+  text-shadow: 0 0 3px rgb(240, 240, 240), 0 0 3px rgb(240, 240, 240);
+  -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: rgb(240, 240, 240);
   position: relative;
 
