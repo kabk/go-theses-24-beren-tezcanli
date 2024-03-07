@@ -809,9 +809,14 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   font-size: 28px;
     
   }
+  #Images {
+    text-align: center;
+    font-size: 28px;
+      
+    }
 
   #Bibliography {
-    font-size: 30px; /* Change this to your desired font size for mobile */
+    font-size: 28px; /* Change this to your desired font size for mobile */
     text-align: center;
 }
 
@@ -833,8 +838,8 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   font-size: 0.6rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
-  text-shadow: 0 0 3px rgb(240, 240, 240), 0 0 3px rgb(240, 240, 240);
-  -webkit-text-stroke-width: 0.3px;
+  text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
+  -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: rgb(240, 240, 240);
   position: relative;
 
