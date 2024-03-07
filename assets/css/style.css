@@ -641,28 +641,31 @@ div.page-wrapper {
     display: block; /* Display the video on mobile devices */
   }
 
-#info-page{
-  color: rgba(255, 255, 255, 0.5);
-  text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
-  -webkit-text-stroke-width: 0.4px;
-  -webkit-text-stroke-color: rgb(240, 240, 240);
-  mix-blend-mode: normal;
-  text-decoration: none;
-  font-family: 'Gambarino';
-  font-size: clamp(2.5rem, 4vw, 4.5rem);
-  font-weight: 800;
-  text-align: right;
-  letter-spacing: -0.02em;
-  line-height: 1em;
-  word-spacing: 1px;
-  padding-right: 20px;
-   margin-top: -40px;
+  #info-page {
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: rgb(240, 240, 240);
+    mix-blend-mode: normal;
+    text-decoration: none;
+    font-family: 'Gambarino';
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    font-weight: 800;
+    text-align: right;
+    letter-spacing: -0.02em;
+    line-height: 1em;
+    word-spacing: 1px;
+    padding-right: 20px;
+    margin-top: -40px;
+    filter: none; /* Remove blur */
+    transition: none; /* Remove transition */
+  }
 
-  }
-  
+  /* Remove the hover effect */
   #info-page:hover {
-    filter: blur(0); /* Remove blur on hover */
+    filter: none;
   }
+
 
   #abstract p {
     margin: 20px auto;
