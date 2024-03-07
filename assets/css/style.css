@@ -581,7 +581,8 @@ div.page-wrapper {
 
 @media only screen and (max-width: 414px) {
   body {
-    height: 100vh;
+    height: auto;
+    overflow-y: auto;
   }
 
   video {
@@ -683,7 +684,7 @@ div.page-wrapper {
     mix-blend-mode: normal;
     filter: blur(10px);
     transition: filter 0.5s ease-in-out;
-    overflow-y: auto;
+ 
    
   }
 
@@ -698,7 +699,7 @@ div.page-wrapper {
     text-shadow: 0 0 1.5px rgb(240, 240, 240), 0 0 1.5px rgb(240, 240, 240);
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: rgb(231, 230, 230);
-    overflow-y: auto;
+   
     
    }
 
@@ -725,7 +726,7 @@ div.page-wrapper {
     letter-spacing: -0.02em;
      line-height: 1.1em;
      width: 320px;
-     overflow-y: auto;
+ 
   
    
   }
@@ -756,7 +757,7 @@ div.page-wrapper {
     letter-spacing: -0.02em;
      line-height: 1.1em;
      width: 320px;
-     overflow-y: auto;
+
   
   }
   
@@ -770,7 +771,7 @@ div.page-wrapper {
     letter-spacing: -0.02em;
     line-height: 1em;
     width: 320px;
-    overflow-y: auto;
+
   
   }
   
@@ -792,14 +793,14 @@ div.page-wrapper {
   font-size: clamp(1rem, 1vw, 1.438rem);
   margin-right: 20px;
   word-wrap: break-word;
-  overflow-y: auto;
+
  } 
 
 #column-6 p  {
 font-size: clamp(1rem, 3vw, 1.438rem);
  margin-left: 20px;
  word-wrap: break-word;
- overflow-y: auto;
+
 
 } 
 
