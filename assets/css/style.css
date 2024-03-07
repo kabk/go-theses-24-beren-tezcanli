@@ -164,6 +164,17 @@ body {
     
    }
 
+   #desktop-navigate{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: clamp(1.25rem, 3vw, 1.75rem); 
+    text-align: center;
+    margin-top: clamp(5%, 20vh, 12%); 
+    margin-bottom: 1px;
+    
+   }
+
+
   
   
   h1{
@@ -584,6 +595,17 @@ div.page-wrapper {
     height: auto;
     overflow-y: auto;
   }
+  .new-column {
+  width: 100%; /* Full viewport width for each column */
+  flex-shrink: 0; /* Prevent columns from shrinking */
+  box-sizing: border-box;
+  overflow: auto; /* Enable vertical scrolling */
+  max-height: 100%; /* Set a maximum height for each column */
+  scroll-snap-align: start; /* Snap to the start of each column */
+  scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
+  float: left;
+  }
+
 
   video {
     width: 100vw;
@@ -639,8 +661,20 @@ div.page-wrapper {
   
   }
   
+  #desktop-navigate{
+   display: none;
+    
+   }
 
-
+   #navigate{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: clamp(1.25rem, 3vw, 1.75rem); 
+    text-align: center;
+    margin-bottom: 1px;
+    
+    
+   }
   #info-page {
     color: rgba(255, 255, 255, 0.5);
     text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
