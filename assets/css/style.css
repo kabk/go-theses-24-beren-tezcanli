@@ -874,6 +874,7 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: rgb(240, 240, 240);
   position: relative;
+  word-break: break-all;
 
 }
 
