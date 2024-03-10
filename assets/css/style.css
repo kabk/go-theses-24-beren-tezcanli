@@ -708,7 +708,7 @@ div.page-wrapper {
     text-align: center;
     width: 80%; 
     text-indent: 10px;
-    font-size: clamp(1.3rem, 1vw, 1.3em);
+    font-size: clamp(1.4rem, 1vw, 1.3em);
     letter-spacing: -0.001em; /* Adjust kerning */
     line-height: 1.1em; /* Adjust line height for better readability */
     font-family: 'Helvetica', sans-serif; /* Added generic sans-serif fallback */
