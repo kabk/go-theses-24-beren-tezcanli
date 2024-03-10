@@ -23,9 +23,14 @@ if (isDesktop()) {
         })
         .catch(function (error) {
             console.error('Error accessing the camera:', error);
+            
+            // If camera access is denied, make background black
+            document.body.style.backgroundColor = 'black';
+            document.body.style.boxShadow = '0 0 30px 15px white inset';
         });
 } else {
     console.log('This feature is only available on desktop computers.');
+
 }
     document.getElementById('aki-hoshide').addEventListener('click', function() {
         var img = document.getElementById('aki-hoshide-img');
