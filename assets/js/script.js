@@ -23,14 +23,10 @@ if (isDesktop()) {
         })
         .catch(function (error) {
             console.error('Error accessing the camera:', error);
-            // If user denies camera access, display the background video
-            var videoContainer = document.getElementById('background-video-container');
-            videoContainer.style.display = 'block'; // Show the video container
         });
 } else {
     console.log('This feature is only available on desktop computers.');
 }
-
     document.getElementById('aki-hoshide').addEventListener('click', function() {
         var img = document.getElementById('aki-hoshide-img');
         var caption = document.getElementById('caption');
