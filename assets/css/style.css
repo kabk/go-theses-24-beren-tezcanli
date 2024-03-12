@@ -92,7 +92,18 @@ body {
   }
 }
 
+ul li a {
+  text-decoration: none;
+  filter: blur(15px); /* Apply initial blur */
+  transition: filter 0.3s ease; /* Add transition effect */
+  display: inline-block; /* Ensure each link takes up its own line */
+  margin-bottom: 5px; /* Add spacing between links */
+}
 
+/* Remove blur effect on hover */
+ul li a:hover {
+  filter: blur(0); /* Remove blur on hover */
+}
 
 .page-wrapper {
   width: 100%;
@@ -159,8 +170,9 @@ body {
     font-style: italic;
     font-size: clamp(1.25rem, 3vw, 1.75rem); 
     text-align: center;
-    margin-top: clamp(5%, 20vh, 12%); 
-    margin-bottom: 1px;
+    margin-top: clamp(5%, 0vh, 12%); 
+    line-height: 0.02em;
+
     
    }
 
@@ -169,8 +181,8 @@ body {
     font-style: italic;
     font-size: clamp(1.25rem, 3vw, 1.75rem); 
     text-align: center;
-    margin-top: clamp(5%, 20vh, 12%); 
-    margin-bottom: 1px;
+    line-height: 0.02em;
+
     
    }
 
@@ -398,9 +410,8 @@ h2{
   font-weight: 800;
   text-align: right;
   letter-spacing: -0.02em;
-  line-height: 1em;
+  line-height: 1.1em;
   word-spacing: 1px;
-  filter: blur(30px);
   transition: filter 0.s ease-in-out;
   padding-right: 20px;
    margin-top: -40px;
@@ -408,9 +419,6 @@ h2{
   }
 
 
-  #info-page:hover {
-    filter: blur(0); /* Remove blur on hover */
-  }
 
   ul {
     list-style-type: none; /* Remove default list markers */
