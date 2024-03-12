@@ -957,16 +957,19 @@ font-size: clamp(1rem, 3vw, 1.438rem);
     z-index: 1;
  
   }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Styling the links within the list */
   ul li a {
     text-decoration: underline;
-   
+    color: #000; /* Change color as needed */
   }
   
-  /* Remove blur effect on hover */
-  ul li a:hover {
-    filter: none; /* Remove blur on hover */
-  }
-  
+
   h2{
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
@@ -1217,16 +1220,17 @@ font-size: clamp(1rem, 3vw, 1.438rem);
 
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling the links within the list */
 ul li a {
   text-decoration: underline;
- 
+  color: #000; /* Change color as needed */
 }
-
-/* Remove blur effect on hover */
-ul li a:hover {
-  filter: none; /* Remove blur on hover */
-}
-
 
 
 #column-8 p {
