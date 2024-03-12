@@ -620,6 +620,11 @@ div.page-wrapper {
     
  
   }
+
+  ul li a {
+    text-decoration: underline;
+    
+  }
  
   h1{
     color: rgba(255, 255, 255, 0.9);
@@ -698,7 +703,7 @@ div.page-wrapper {
     /* Remove transition */
     transition: none; 
     /* Keep underline */
-    text-decoration: underline rgb(240, 240, 240);
+ 
   }
   
   /* Remove the hover effect */
@@ -1103,7 +1108,10 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   }
 
 
-  
+  ul li a {
+    text-decoration: underline;
+    
+  }
   
  
  
@@ -1206,9 +1214,6 @@ font-size: clamp(1rem, 3vw, 1.438rem);
 
 }
 
-ul li a {
-  text-decoration: none;
-}
 
 
 
