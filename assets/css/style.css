@@ -92,18 +92,7 @@ body {
   }
 }
 
-ul li a {
-  text-decoration: none;
-  filter: blur(15px); /* Apply initial blur */
-  transition: filter 0.3s ease; /* Add transition effect */
-  display: inline-block; /* Ensure each link takes up its own line */
-  margin-bottom: 5px; /* Add spacing between links */
-}
 
-/* Remove blur effect on hover */
-ul li a:hover {
-  filter: blur(0); /* Remove blur on hover */
-}
 
 .page-wrapper {
   width: 100%;
@@ -897,10 +886,6 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   word-wrap: break-word;
 }
 
-ul li a {
-  text-decoration: none;
- 
-}
 
 
   /* Adjust other elements as necessary */
@@ -1224,10 +1209,7 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   word-wrap: break-word;
 }
 
-ul li a {
-  text-decoration: none;
- 
-}
+
   /* Adjust other elements as necessary */
 }
 
