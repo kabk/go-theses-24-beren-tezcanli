@@ -92,7 +92,18 @@ body {
   }
 }
 
+ul li a {
+  text-decoration: none;
+  filter: blur(15px); /* Apply initial blur */
+  transition: filter 0.3s ease; /* Add transition effect */
+  display: inline-block; /* Ensure each link takes up its own line */
+  margin-bottom: 5px; /* Add spacing between links */
+}
 
+/* Remove blur effect on hover */
+ul li a:hover {
+  filter: blur(0); /* Remove blur on hover */
+}
 
 .page-wrapper {
   width: 100%;
@@ -946,7 +957,16 @@ font-size: clamp(1rem, 3vw, 1.438rem);
     z-index: 1;
  
   }
-
+  ul li a {
+    text-decoration: underline;
+   
+  }
+  
+  /* Remove blur effect on hover */
+  ul li a:hover {
+    filter: none; /* Remove blur on hover */
+  }
+  
   h2{
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
@@ -1197,6 +1217,15 @@ font-size: clamp(1rem, 3vw, 1.438rem);
 
 }
 
+ul li a {
+  text-decoration: underline;
+ 
+}
+
+/* Remove blur effect on hover */
+ul li a:hover {
+  filter: none; /* Remove blur on hover */
+}
 
 
 
