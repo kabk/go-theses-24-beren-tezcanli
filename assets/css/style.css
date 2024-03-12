@@ -93,17 +93,11 @@ body {
 }
 
 ul li a {
-  text-decoration: none;
-  filter: blur(15px); /* Apply initial blur */
-  transition: filter 0.3s ease; /* Add transition effect */
-  display: inline-block; /* Ensure each link takes up its own line */
-  margin-bottom: 5px; /* Add spacing between links */
+  text-decoration: underline;
+  
 }
 
-/* Remove blur effect on hover */
-ul li a:hover {
-  filter: blur(0); /* Remove blur on hover */
-}
+
 
 .page-wrapper {
   width: 100%;
@@ -410,7 +404,7 @@ h2{
   font-weight: 800;
   text-align: right;
   letter-spacing: -0.02em;
-  line-height: 1.1em;
+  line-height: 1.2em;
   word-spacing: 1px;
   transition: filter 0.s ease-in-out;
   padding-right: 20px;
@@ -683,13 +677,13 @@ div.page-wrapper {
     
     
    }
-  #info-page {
+   #info-page {
     color:rgba(255, 255, 255, 0.5);
     text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: rgb(240, 240, 240);
     mix-blend-mode: normal;
-    text-decoration: underline rgb(240, 240, 240 );
+    text-decoration: none;
     font-family: 'Gambarino';
     font-size: 2rem;
     font-weight: 800;
@@ -699,10 +693,14 @@ div.page-wrapper {
     word-spacing: 1px;
     padding-right: 20px;
     margin-top: -10px;
-    filter: none; /* Remove blur */
-    transition: none; /* Remove transition */
+    /* Remove blur */
+    filter: none; 
+    /* Remove transition */
+    transition: none; 
+    /* Keep underline */
+    text-decoration: underline rgb(240, 240, 240);
   }
-
+  
   /* Remove the hover effect */
   #info-page:hover {
     filter: none;
@@ -768,8 +766,6 @@ div.page-wrapper {
     letter-spacing: -0.02em;
      line-height: 1.1em;
      width: 320px;
- 
-  
    
   }
  
@@ -783,10 +779,7 @@ div.page-wrapper {
   }
 
 
-  
-  
- 
- 
+
   #column-3 p {
 
     margin: 20px auto; /* Center the paragraph horizontally */
@@ -886,10 +879,7 @@ font-size: clamp(1rem, 3vw, 1.438rem);
 
 }
 
-ul li a {
-  text-decoration: none;
-  filter: blur(none);
-}
+
 
 #column-8 p {
   font-family: 'Times New Roman', Times, serif;
@@ -899,6 +889,7 @@ ul li a {
   margin-right: 20px;
   word-wrap: break-word;
 }
+
 
 
 
@@ -960,8 +951,6 @@ ul li a {
     z-index: 1;
  
   }
-  
-  
 
   h2{
     color: rgba(255, 255, 255, 0.9);
@@ -1010,7 +999,7 @@ ul li a {
     
     
    }
-  #info-page {
+   #info-page {
     color:rgba(255, 255, 255, 0.5);
     text-shadow: 0 0 2px rgb(240, 240, 240), 0 0 2px rgb(240, 240, 240);
     -webkit-text-stroke-width: 0.4px;
@@ -1026,11 +1015,14 @@ ul li a {
     word-spacing: 1px;
     padding-right: 20px;
     margin-top: -10px;
-    filter: none; /* Remove blur */
-    transition: none; /* Remove transition */
+    /* Remove blur */
+    filter: none; 
+    /* Remove transition */
+    transition: none; 
+    /* Keep underline */
     text-decoration: underline rgb(240, 240, 240);
   }
-
+  
   /* Remove the hover effect */
   #info-page:hover {
     filter: none;
@@ -1214,12 +1206,10 @@ font-size: clamp(1rem, 3vw, 1.438rem);
 
 }
 
-
-/* Styling the links within the list */
 ul li a {
   text-decoration: none;
-  filter: blur(none);
 }
+
 
 
 #column-8 p {
