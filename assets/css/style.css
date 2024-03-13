@@ -77,6 +77,10 @@ body {
   cursor: default;
 }
 
+.new-column {
+  display: none;
+  }
+
 
 /* Optional: Add animation for the arrow */
 .arrow-right:hover {
@@ -607,6 +611,7 @@ div.page-wrapper {
   scroll-snap-align: start; /* Snap to the start of each column */
   scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
   float: left;
+  display: block;
   }
 
 
@@ -920,6 +925,7 @@ font-size: clamp(1rem, 3vw, 1.438rem);
   scroll-snap-align: start; /* Snap to the start of each column */
   scroll-snap-stop: always; /* Ensure consistent behavior across browsers */
   float: left;
+  display: block;
   }
 
 
