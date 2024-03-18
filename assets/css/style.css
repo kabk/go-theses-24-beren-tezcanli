@@ -167,9 +167,8 @@ ul li a {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: clamp(1.25rem, 3vw, 1.75rem); 
-    text-align: center;
-    margin-top: clamp(5%, 0vh, 12%); 
-    line-height: 0.02em;
+text-align: center;
+     word-wrap: break-word;
 
     
    }
